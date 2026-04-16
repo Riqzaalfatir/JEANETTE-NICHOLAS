@@ -84,10 +84,12 @@ const Waktu = () => {
           </div>
 
           {/* TIME */}
-          <div className="flex  gap-3 mt-[20px] text-[#CD4964]">
+          <div className="flex  gap-3 mt-[4%] text-[#CD4964]">
             <div className="w-[22px] mt-[15px] h-[2px] bg-[#CD4964]" />
 
-            <p className="text-[24px] font-semibold font-cormorant ">11.00 WIB</p>
+            <p className="text-[24px] font-semibold font-cormorant ">
+              11.00 WIB
+            </p>
 
             <div className="w-[22px] h-[2px] mt-[15px]  bg-[#CD4964]" />
           </div>
@@ -108,7 +110,14 @@ const Waktu = () => {
           </p>
 
           {/* BUTTON */}
-          <button className="mt-[36px] bg-[#FF751F] text-white w-[160px] h-[30px] rounded-full text-[13px] font-bold font-cormorant">
+          <button
+            onClick={() => {
+              const url =
+                "https://www.google.com/maps/search/?api=1&query=Jl.%20Jendral%20Sudirman%20No.%20232A%20Bandung";
+              window.open(url, "_blank");
+            }}
+            className="mt-[36px] bg-[#FF751F] text-white w-[160px] h-[30px] rounded-full text-[13px] font-bold font-cormorant"
+          >
             GOOGLE MAPS
           </button>
         </div>
@@ -135,8 +144,8 @@ const Waktu = () => {
       <Image
         src="/images/waktu/Ornament-BungaKnan.svg"
         alt="bunga kanan"
-        width={190}
-        height={190}
+        width={200}
+        height={200}
         className="absolute -bottom-0 right-0"
       />
 

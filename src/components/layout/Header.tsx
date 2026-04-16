@@ -101,7 +101,7 @@ const Header = ({ open, setOpen }: HeaderProps) => {
               variants={container}
               initial="hidden"
               animate="show"
-              className="pt-4 pl-[25px] md:pl-4 space-y-1 text-[12px] md:text-[14px] tracking-widest text-black font-sans font-medium flex flex-col"
+              className="pt-4 pl-[25px] md:pl-4 space-y-1.5 text-[12px] md:text-[14px] tracking-widest text-black font-sans font-medium flex flex-col"
             >
               {linkMenu.map((menu) => (
                 <motion.a

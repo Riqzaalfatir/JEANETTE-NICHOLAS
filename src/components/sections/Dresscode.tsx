@@ -33,7 +33,7 @@ const Dresscode = () => {
         alt=""
         width={200}
         height={200}
-        className="absolute bottom-[11%] left-0 z-20 w-[54%] h-auto"
+        className="absolute bottom-[11%] left-0 z-20 w-[53%] h-auto"
       />
 
       {/* ORNAMEN BUNGA KANAN */}
@@ -42,7 +42,7 @@ const Dresscode = () => {
         alt=""
         width={250}
         height={250}
-        className="absolute bottom-[7%] -right-2 z-30 w-[56%] h-auto"
+        className="absolute bottom-[7.5%] -right-0 z-40 w-[53%] h-auto"
       />
 
       {/* ORNAMEN BUNGA TENGAH */}
@@ -51,7 +51,7 @@ const Dresscode = () => {
         alt=""
         width={250}
         height={250}
-        className="absolute bottom-[6%] right-[16%] z-40 w-[41%] h-auto"
+        className="absolute bottom-[6%] right-[16%] z-30 w-[41%] h-auto"
       />
 
       {/* ORNAMEN GUCI */}
@@ -68,12 +68,12 @@ const Dresscode = () => {
         <h2 className="text-[6.2vw] font-david font-bold text-[#CD4964] mt-[32vw]">
           DRESSCODE
         </h2>
-        <p className="mt-[8%] text-[3.33vw] text-[#CD4964] font-cormorant">
+        <p className="mt-[8%] text-[3.33vw] text-[#CD4964] font-cormorant leading-4">
           we would sincerely appreciate<br />
           your presence in<br />
           peranakan kebaya / cheongsam / batik attire
         </p>
-        <div className="mt-0">
+        <div className="-mt-[2%]">
           <Image
             src="/images/dresscode/Ornament-Orang.svg"
             alt="dresscode"

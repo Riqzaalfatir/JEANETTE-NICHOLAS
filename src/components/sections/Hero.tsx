@@ -22,7 +22,7 @@ const Hero = () => {
           <Image
             src="/images/hero/Ornament-Hero.svg"
             alt="ornament"
-            width={95}
+            width={85}
             height={110}
             className=""
           />
@@ -31,7 +31,7 @@ const Hero = () => {
 
         {/* CONTENT */}
 
-        <div className="absolute inset-0 flex flex-col justify-end items-center pb-[29%] text-center z-10">
+        <div className="absolute inset-0 flex flex-col justify-end items-center pb-[28%] text-center z-10">
           <p className="text-white font-cormorant font-semibold text-[16px]">
             The Sangjit of
           </p>
@@ -40,8 +40,8 @@ const Hero = () => {
             JEANETTE & NICHOLAS
           </h1>
 
-          <p className="text-white font-cormorant font-bold text-[12px]">
-            SATURDAY, 02 MAY 2026
+          <p className="text-white font-cormorant font-bold text-[13px]">
+            SATURDAY, 16 MAY 2026
           </p>
         </div>
       </div>

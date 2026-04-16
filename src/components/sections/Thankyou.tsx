@@ -37,7 +37,7 @@ const Thankyou = () => {
         alt=""
         width={200}
         height={200}
-        className="absolute bottom-[6%] right-[22%] z-10 w-[51%] h-auto"
+        className="absolute bottom-[7%] right-[22%] z-10 w-[51%] h-auto"
       />
 
       {/* FRAME */}
@@ -56,7 +56,7 @@ const Thankyou = () => {
 
       {/* CONTENT */}
       <div className="absolute inset-0 z-30 flex flex-col items-center text-center px-8">
-        <h2 className="text-[6.2vw] font-david font-bold text-[#CD4964] mt-[62vw] uppercase">
+        <h2 className="text-[6.2vw] font-david font-bold text-[#CD4964] mt-[63vw] uppercase">
           Thank you
         </h2>
         <p className="mt-[4vw] text-[3.3vw] text-[#CD4964] font-cormorant">

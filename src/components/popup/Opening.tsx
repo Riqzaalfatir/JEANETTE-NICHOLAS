@@ -36,7 +36,7 @@
                 ease: "easeOut"
               }}
 
-              className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[440px] md:w-[406px] md:h-[520px] shadow-xl flex flex-col"
+              className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[430px] md:w-[406px] md:h-[520px] shadow-xl flex flex-col"
             >
               <div className="relative w-full h-[182px] md:h-[220px] overflow-hidden">
                 <Image
@@ -71,7 +71,7 @@
 
                 <button
                   onClick={handleOpen}
-                  className="bg-[#CB4F35] text-[#FEFBF0] w-[184px] h-[30px] md:w-[220px] md:h-[40px] rounded-full uppercase font-cormorant font-medium text-[13px] md:text-[18px] mt-[12px] md:mt-[20px]"
+                  className="bg-[#CB4F35] text-[#FEFBF0] w-[184px] h-[30px] md:w-[220px] md:h-[40px] rounded-full uppercase font-cormorant font-medium text-[15px] md:text-[18px] mt-[12px] md:mt-[20px]"
                 >
                   Open Invitation
                 </button>
