@@ -3,60 +3,68 @@ import Image from "next/image";
 
 const Thankyou = () => {
   return (
-    <>
-      <div className="relative w-full h-[680px] md:h-[573px] flex justify-center items-center overflow-hidden">
-        {/* BG CREAM */}
-        <div className="absolute inset-0 bg-[#F3EAD7] z-0" />
+    <div
+      className="relative w-full overflow-hidden"
+      style={{ 
+        aspectRatio: "390/680",
+        boxShadow: "0px 0px 0px 0px rgba(0,0,0,0.25)"
+      }}
+    >
+      {/* BG CREAM */}
+      <div className="absolute inset-0 bg-[#F8F0CC] z-0" />
 
-        {/* ORNAMEN BUNGA & GUCI (DI ATAS BG, TAPI DI BAWAH FRAME) */}
-        <Image
-          src="/images/thankyou/Ornament-BungaKiri.svg"
-          alt=""
-          width={250}
-          height={250}
-          className="absolute bottom-20 left-5 z-20"
-        />
+      {/* ORNAMEN BUNGA KIRI */}
+      <Image
+        src="/images/thankyou/Ornament-BungaKiri.svg"
+        alt=""
+        width={400}
+        height={400}
+        className="absolute bottom-[9%] left-[6%] z-10 w-[77%] h-auto"
+      />
 
-        <Image
-          src="/images/thankyou/Ornament-BungaKanan.svg"
-          alt=""
-          width={250}
-          height={250}
-          className="absolute bottom-0 -right-0 z-10"
-        />
+      {/* ORNAMEN BUNGA KANAN */}
+      <Image
+        src="/images/thankyou/Ornament-BungaKanan.svg"
+        alt=""
+        width={250}
+        height={250}
+        className="absolute bottom-[7%] right-0 z-10 w-[64%] h-auto"
+      />
 
-        <Image
-          src="/images/thankyou/Ornament-BungaTengah.svg"
-          alt=""
-          width={200}
-          height={200}
-          className="absolute bottom-10  z-10"
-        />
+      {/* ORNAMEN BUNGA TENGAH */}
+      <Image
+        src="/images/thankyou/Ornament-BungaTengah.svg"
+        alt=""
+        width={200}
+        height={200}
+        className="absolute bottom-[6%] right-[22%] z-10 w-[51%] h-auto"
+      />
 
+      {/* FRAME */}
+      <img
+        src="/images/thankyou/Bg-Thankyou.png"
+        alt=""
+        className="absolute pointer-events-none z-20"
+        style={{
+          top: "51%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          width: "112%",
+          height: "107%",
+        }}
+      />
 
-        {/* FRAME BIRU (YANG NUTUPIN BUNGA) */}
-        <Image
-          src="/images/thankyou/Bg-Thankyou.png"
-          alt=""
-          fill
-          className="object-cover z-20 pointer-events-none"
-        />
-
-        {/* CONTENT */}
-        <div className="relative z-30 flex flex-col items-center justify-center text-center px-8 h-full">
-          {/* TITLE */}
-          <h2 className="text-[28px] xs:text-[140px] md:text-[32px] font-cormorant font-semibold text-[#CD4964] tracking-wide">
-            Thankyou
-          </h2>
-
-          {/* DESCRIPTION */}
-          <p className="mt-4 text-[13px] md:text-[14px] text-[#CD4964] leading-relaxed font-cormorant">
-           It would be a joy and honor for us to have you join our <br /> celebration and share your blessings.
-          </p>
-
-        </div>
+      {/* CONTENT */}
+      <div className="absolute inset-0 z-30 flex flex-col items-center text-center px-8">
+        <h2 className="text-[24px] font-david font-bold text-[#CD4964] mt-[72%] uppercase">
+          Thank you
+        </h2>
+        <p className="mt-4 text-[13px] text-[#CD4964] font-cormorant">
+          It would be a joy and honor for us to have you join our <br />
+          celebration and share your blessings.
+        </p>
       </div>
-    </>
+    </div>
   );
 };
 

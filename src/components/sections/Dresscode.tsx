@@ -3,73 +3,87 @@ import Image from "next/image";
 
 const Dresscode = () => {
   return (
-    <>
-      <div className="relative w-full min-h-[530px] md:h-[573px] flex justify-center items-center overflow-hidden">
-        {/* BG CREAM */}
-        <div className="absolute inset-0 bg-[#F3EAD7] z-0" />
+    <div
+      className="relative w-full overflow-hidden"
+      style={{ 
+        aspectRatio: "390/573",
+        boxShadow: "4px 1px 17px 0px rgba(0,0,0,0.85)"
+      }}
+    >
+      {/* BG CREAM */}
+      <div className="absolute inset-0 bg-[#F8F0CC] z-0" />
 
-        {/* ORNAMEN BUNGA & GUCI (DI ATAS BG, TAPI DI BAWAH FRAME) */}
-        <Image
-          src="/images/dresscode/Ornament-BungaKiri.svg"
-          alt=""
-          width={200}
-          height={200}
-          className="absolute bottom-14 left-0 z-20"
-        />
+      {/* FRAME BG */}
+      <img
+        src="/images/dresscode/Ornament-Bg.svg"
+        alt=""
+        className="absolute pointer-events-none z-50"
+        style={{
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          width: "110%",
+          height: "112%",
+        }}
+      />
 
-        <Image
-          src="/images/dresscode/Ornament-BungaKanan.svg"
-          alt=""
-          width={250}
-          height={250}
-          className="absolute bottom-0 -right-10 z-10"
-        />
+      {/* ORNAMEN BUNGA KIRI */}
+      <Image
+        src="/images/dresscode/Ornament-BungaKiri.svg"
+        alt=""
+        width={200}
+        height={200}
+        className="absolute bottom-[11%] left-0 z-20 w-[54%] h-auto"
+      />
 
-        <Image
-          src="/images/dresscode/Ornament-Guci.svg"
-          alt=""
-          width={140}
-          height={140}
-          className="absolute bottom-2 left-1/2 -translate-x-1/2 z-10"
-        />
+      {/* ORNAMEN BUNGA KANAN */}
+      <Image
+        src="/images/dresscode/Ornament-BungaKanan.svg"
+        alt=""
+        width={250}
+        height={250}
+        className="absolute bottom-[7%] -right-2 z-30 w-[56%] h-auto"
+      />
 
-        {/* FRAME BIRU (YANG NUTUPIN BUNGA) */}
-        <Image
-          src="/images/dresscode/Ornament-Bg.svg"
-          alt=""
-          fill
-          className="object-cover z-20 pointer-events-none"
-        />
+      {/* ORNAMEN BUNGA TENGAH */}
+      <Image
+        src="/images/dresscode/Ornament-BungaTengah.svg"
+        alt=""
+        width={250}
+        height={250}
+        className="absolute bottom-[6%] right-[16%] z-40 w-[41%] h-auto"
+      />
 
-        {/* CONTENT */}
-        <div className="relative z-30 flex flex-col items-center justify-center text-center px-8 h-full">
-          {/* TITLE */}
-          <h2 className="text-[28px] md:text-[32px] font-cormorant font-semibold text-[#CD4964] tracking-wide">
-            DRESSCODE
-          </h2>
+      {/* ORNAMEN GUCI */}
+      <Image
+        src="/images/dresscode/Ornament-Guci.svg"
+        alt=""
+        width={140}
+        height={140}
+        className="absolute bottom-[1%] left-1/2 -translate-x-1/2 z-10 w-[36%] h-auto"
+      />
 
-          {/* DESCRIPTION */}
-          <p className="mt-4 text-[13px] md:text-[14px] text-[#CD4964] leading-relaxed font-cormorant">
-            we would sincerely appreciate <br />
-            your presence in <br />
-            <span className="italic">
-              peranakan kebaya / cheongsam / batik attire
-            </span>
-          </p>
-
-          {/* IMAGE ORANG */}
-          <div className="mt-6">
-            <Image
-              src="/images/dresscode/Ornament-orang.svg"
-              alt="dresscode"
-              width={70}
-              height={220}
-              className="object-contain"
-            />
-          </div>
+      {/* CONTENT */}
+      <div className="absolute inset-0 z-30 flex flex-col items-center text-center px-8 leading-none">
+        <h2 className="text-[24px] font-david font-bold text-[#CD4964] mt-[36%]">
+          DRESSCODE
+        </h2>
+        <p className="mt-[8%] text-[13px] text-[#CD4964] font-cormorant">
+          we would sincerely appreciate<br />
+          your presence in<br />
+          peranakan kebaya / cheongsam / batik attire
+        </p>
+        <div className="mt-0">
+          <Image
+            src="/images/dresscode/Ornament-orang.svg"
+            alt="dresscode"
+            width={210}
+            height={210}
+            className="object-contain w-[180%]"
+          />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
