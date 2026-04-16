@@ -118,13 +118,13 @@ const Header = ({ open, setOpen }: HeaderProps) => {
                   {/* PANAH */}
                   <span
                     className="absolute left-0 opacity-0 transition-all duration-500 ease-out 
-                   group-hover:opacity-100 font-ibm"
+                   group-hover:opacity-100 font-sans"
                   >
                     →
                   </span>
 
                   {/* TEXT */}
-                  <span className="transition-all duration-300 ease-out group-hover:translate-x-4">
+                  <span className="transition-all duration-300 ease-out group-hover:translate-x-5">
                     {menu.name}
                   </span>
                 </motion.a>

@@ -24,7 +24,7 @@
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }} 
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm  md:backdrop-blur-md flex justify-center items-start md:items-center pt-32 md:pt-0 px-4"
+            className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm  md:backdrop-blur-md flex justify-center items-center  px-4"
           >
             {/* CARD POPUP */}
             <motion.div
@@ -36,7 +36,7 @@
                 ease: "easeOut"
               }}
 
-              className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[430px] md:w-[406px] md:h-[520px] shadow-xl flex flex-col"
+              className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[440px] md:w-[406px] md:h-[520px] shadow-xl flex flex-col"
             >
               <div className="relative w-full h-[182px] md:h-[220px] overflow-hidden">
                 <Image
@@ -52,7 +52,7 @@
                   The Sangjit of
                 </p>
 
-                <h1 className="text-[24px] md:text-[36px] text-[#202F26] pt-[8px] md:pt-[12px] font-david">
+                <h1 className="text-[24px] md:text-[36px] text-[#202F26] pt-[8px] md:pt-[12px] font-david uppercase">
                   JEANETTE & NICHOLAS
                 </h1>
 
@@ -64,7 +64,7 @@
                   {namaTamu}
                 </p>
 
-                <p className="text-[10px] md:text-[12px]  text-[#202F26] font-cormorant pt-[12px] md:pt-[23px] leading-[1.4]">
+                <p className="text-[10px] md:text-[12px]  text-[#202F26] font-cormorant pt-[15px] md:pt-[23px] leading-[1.2]">
                  We sincerely apologize<br />
                  for any misspelling of names or titles.
                 </p>

@@ -65,10 +65,10 @@ const Dresscode = () => {
 
       {/* CONTENT */}
       <div className="absolute inset-0 z-30 flex flex-col items-center text-center px-8 leading-none">
-        <h2 className="text-[24px] font-david font-bold text-[#CD4964] mt-[36%]">
+        <h2 className="text-[6.2vw] font-david font-bold text-[#CD4964] mt-[32vw]">
           DRESSCODE
         </h2>
-        <p className="mt-[8%] text-[13px] text-[#CD4964] font-cormorant">
+        <p className="mt-[8%] text-[3.33vw] text-[#CD4964] font-cormorant">
           we would sincerely appreciate<br />
           your presence in<br />
           peranakan kebaya / cheongsam / batik attire
@@ -79,7 +79,7 @@ const Dresscode = () => {
             alt="dresscode"
             width={210}
             height={210}
-            className="object-contain w-[180%]"
+            className="object-contain w-[40vw]"
           />
         </div>
       </div>

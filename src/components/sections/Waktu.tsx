@@ -121,7 +121,7 @@ const Waktu = () => {
         alt="guci"
         width={120}
         height={120}
-        className="absolute -bottom-0 right-[-0px]"
+        className="absolute -bottom-0 right-0"
       />
 
       <Image
@@ -129,7 +129,7 @@ const Waktu = () => {
         alt="bunga kiri"
         width={195}
         height={140}
-        className="absolute -bottom-2 left-[0px]"
+        className="absolute -bottom-2 left-0"
       />
 
       <Image
@@ -137,7 +137,7 @@ const Waktu = () => {
         alt="bunga kanan"
         width={190}
         height={190}
-        className="absolute -bottom-0 right-[5px]"
+        className="absolute -bottom-0 right-0"
       />
 
       <Image
@@ -145,7 +145,7 @@ const Waktu = () => {
         alt="bunga kanan"
         width={100}
         height={100}
-        className="absolute -bottom-2 right-[0px]"
+        className="absolute -bottom-2 right-0"
       />
     </div>
   );

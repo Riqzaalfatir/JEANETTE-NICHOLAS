@@ -3,77 +3,100 @@ import Image from "next/image";
 
 const Profile = () => {
   return (
-      <div className="relative w-full flex justify-center items-center bg-[#FEFFF9]">
-      {/* BACKGROUND IMAGE */}
-      <Image
+    <div
+      className="relative w-full overflow-hidden flex items-center justify-center"
+      style={{ aspectRatio: "390/725" }}
+    >
+      <img
         src="/images/profile/Bg-Profile.png"
-        alt="background"
-        fill
-        className="object-none object-top"
+        alt=""
+        className="absolute pointer-events-none z-0"
+        style={{
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -42%)",
+          width: "100%",
+          height: "119%",
+          objectPosition: "left top",
+        }}
       />
 
       {/* CONTENT */}
-      <div className=" inset-0 pt-[11%] pb-10 px-2 flex flex-col items-center text-center">
-        <div className="relative w-[340px] h-[630px] bg-[#FEFFF9] p-[1px] pl-[2px] leading-none">
-          <Image
-            src="/images/profile/Ornament-Emas.svg"
-            alt="frame"
-            width={450}
-            height={600}
-            className="w-full h-auto"
-          />
+  {/* Card putih */}
+<div
+  className="relative w-[88%] bg-[#FEFFF9] leading-none overflow-hidden"
+  style={{ 
+    aspectRatio: "340/630",
+    boxShadow: "2px 3px 3px 2px rgba(0,0,0,0.50)" 
+  }}
+>
+  {/* Frame emas */}
+  <Image
+    src="/images/profile/Ornament-Emas.svg"
+    alt="frame"
+    fill
+    className="object-fill pointer-events-none z-0"
+  />
 
-          <div className="absolute inset-0 pt-[13%] pb-[16.5%] px-[8%] flex flex-col items-center text-center">
-            <Image
-              src="/images/profile/Logo-Provile.svg"
-              alt="ornament"
-              width={43}
-              height={100}
-              className="w-[15%] h-auto mb-[15px]"
-            />
+  <div className="relative z-10 w-full h-full pt-[15%] pb-[20%]  flex flex-col items-center text-center justify-between">
+    
+    <div className="flex flex-col items-center">
+      <Image
+        src="/images/profile/Logo-Provile.svg"
+        alt="ornament"
+        width={43}
+        height={100}
+        className="w-[20%] h-auto"
+      />
+      <h2 style={{ fontSize: "3.2vw" }} className="font-cormorant text-[#7B552B] leading-4 mt-[6%]">
+        We are cordially inviting you to be part of <br /> our engagement celebration
+      </h2>
+    </div>
 
-            <h2 className="font-cormorant text-[13px] text-[#7B552B] mb-[39px] leading-4">
-              We are cordially inviting you to be part of <br /> our engagement
-              celebration
-            </h2>
+    <div className="flex flex-col items-center">
+      <p style={{ fontSize: "3.2vw" }} className="font-cormorant font-bold text-[#7B552B]">
+        Together with our families
+      </p>
+    </div>
 
-            <p className="font-cormorant font-bold text-[13px] text-[#7B552B] mb-[23px]">
-              Together with our families
-            </p>
+    <div className="flex flex-col items-center">
+      <h1 style={{ fontSize: "8vw" }} className="text-[#FF751F] font-signature">
+        Jeanette Natasha
+      </h1>
+      <p style={{ fontSize: "3.2vw" }} className="font-cormorant font-bold text-[#7B552B] mt-[2%]">
+        The Daughter of
+      </p>
+      <p style={{ fontSize: "3.2vw" }} className="font-cormorant text-[#7B552B] leading-4 mt-[2%]">
+        Mr. Na Eng Siang and <br />Mrs. Djuliawati Tan
+      </p>
+    </div>
 
-            <h1 className="text-[32px] text-[#FF751F] font-signature mb-[6px]">
-              Jeanette Natasha
-            </h1>
-            <p className="font-cormorant font-bold text-[13px] text-[#7B552B] mb-[8px]">
-              The Daughter of
-            </p>
-            <p className="font-cormorant text-[13px] text-[#7B552B] mb-[23px] leading-4">
-              Mr. Na Eng Siang and <br />
-              Mrs. Djuliawati Tan
-            </p>
+    <div>
+      <p style={{ fontSize: "3.2vw" }} className="font-cormorant font-bold italic text-[#7B552B]">
+        and
+      </p>
+    </div>
 
-            <p className="font-cormorant font-bold italic text-[13px] text-[#7B552B] mb-[22px]">
-              and
-            </p>
+    <div className="flex flex-col items-center">
+      <h1 style={{ fontSize: "8vw" }} className="text-[#FF751F] font-signature">
+        Nicholas Chua
+      </h1>
+      <p style={{ fontSize: "3.2vw" }} className="font-cormorant font-bold text-[#7B552B] mt-[2%]">
+        The Son of
+      </p>
+      <p style={{ fontSize: "3.2vw" }} className="font-cormorant text-[#7B552B] leading-4 mt-[2%]">
+        Mr. Chua Sui Hian and <br />Mrs. Go Lie Lien
+      </p>
+    </div>
 
-            <h1 className="text-[32px] text-[#FF751F] font-signature mb-[6px]">
-              Nicholas Chua
-            </h1>
-            <p className="font-cormorant font-bold text-[13px] text-[#7B552B] mb-[8px]">
-              The Son of
-            </p>
-            <p className="font-cormorant text-[13px] text-[#7B552B] mb-[44px] leading-4">
-              Mr. Chua Sui Hian and <br />
-              Mrs. Go Lie Lien
-            </p>
+    <div>
+      <p style={{ fontSize: "3.2vw" }} className="font-cormorant text-[#7B552B] leading-4">
+        our joy will be completed with <br />your presence and blessings
+      </p>
+    </div>
 
-            <p className="font-cormorant text-[13px] text-[#7B552B] leading-4'">
-              our joy will be completed with <br />
-              your presence and blessings
-            </p>
-          </div>
-        </div>
-      </div>
+  </div>
+</div>
     </div>
   );
 };
