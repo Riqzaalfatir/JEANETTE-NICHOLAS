@@ -75,7 +75,7 @@ const Dresscode = () => {
         </p>
         <div className="mt-0">
           <Image
-            src="/images/dresscode/Ornament-orang.svg"
+            src="/images/dresscode/Ornament-Orang.svg"
             alt="dresscode"
             width={210}
             height={210}
