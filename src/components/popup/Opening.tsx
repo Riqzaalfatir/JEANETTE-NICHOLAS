@@ -1,0 +1,87 @@
+  "use client";
+
+  import { useState, useEffect } from "react";
+  import Image from "next/image";
+  import { motion, AnimatePresence } from "framer-motion";
+
+  const Opening = ({ namaTamu = "Sela" }) => {
+    const [open, setOpen] = useState(true);
+
+    useEffect(() => {
+      document.body.style.overflow = "hidden";
+    }, []);
+
+    const handleOpen = () => {
+      setOpen(false);
+      document.body.style.overflow = "auto";
+    };
+
+    return (
+      <AnimatePresence mode="wait" >
+        {open && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }} 
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm  md:backdrop-blur-md flex justify-center items-start md:items-center pt-32 md:pt-0 px-4"
+          >
+            {/* CARD POPUP */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.97, y: 30 }} 
+              transition={{
+                duration: open ? 0.6 : 1.5, // masuk lebih lama, keluar lebih pelan
+                ease: "easeOut"
+              }}
+
+              className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[430px] md:w-[406px] md:h-[520px] shadow-xl flex flex-col"
+            >
+              <div className="relative w-full h-[182px] md:h-[220px] overflow-hidden">
+                <Image
+                  src="/images/opening/Opening.jpg"
+                  alt="prewed"
+                  fill
+                  className="object-cover object-[50%_46%] md:object-[50%_70%]"
+                />
+              </div>
+
+              <div className="flex flex-col items-center text-center px-4 pt-[28px] md:pt-[22px] pb-[40px] md:pb-[0px] flex-1 leading-none">
+                <p className="text-[13px] md:text-[14px] text-[#202F26] font-cormorant font-medium ">
+                  The Sangjit of
+                </p>
+
+                <h1 className="text-[24px] md:text-[36px] text-[#202F26] pt-[8px] md:pt-[12px] font-david">
+                  JEANETTE & NICHOLAS
+                </h1>
+
+                <p className="text-[13px] md:text-[14px] text-[#202F26] font-cormorant font-medium pt-[14px] md:pt-[22px]">
+                  Dear Mr. / Mrs. / Ms.
+                </p>
+
+                <p className="text-[13px] md:text-[18px] font-medium font-cormorant text-[#202F26] pt-[11px] md:pt-[13px]">
+                  {namaTamu}
+                </p>
+
+                <p className="text-[10px] md:text-[12px]  text-[#202F26] font-cormorant pt-[12px] md:pt-[23px] leading-[1.4]">
+                 We sincerely apologize<br />
+                 for any misspelling of names or titles.
+                </p>
+
+                <button
+                  onClick={handleOpen}
+                  className="bg-[#CB4F35] text-[#FEFBF0] w-[184px] h-[30px] md:w-[220px] md:h-[40px] rounded-full uppercase font-cormorant font-medium text-[13px] md:text-[18px] mt-[12px] md:mt-[20px]"
+                >
+                  Open Invitation
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )
+        }
+      </AnimatePresence >
+    );
+  };
+
+  export default Opening;

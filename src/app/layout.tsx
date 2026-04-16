@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Cormorant, David_Libre, Noto_Sans, IBM_Plex_Sans} from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,35 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+export const cormorant = Cormorant({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-cormorant",
+})
+
+export const davidLibre = David_Libre({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-david",
+})
+
+const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-noto-sans",
+});
+
+const signature = localFont({
+  src: "../fonts/Thesignature.otf",
+  variable: "--font-signature",
+});
+
+const ibmPlex = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-ibm",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${davidLibre.variable} ${signature.variable} ${notoSans.variable} ${ibmPlex.variable} `}>
       <body>{children}</body>
     </html>
   );
