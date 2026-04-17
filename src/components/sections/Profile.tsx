@@ -69,6 +69,7 @@ const Profile = () => {
 
             <h2
               data-aos="fade-up"
+              style={{ fontSize: "3.33vw" }}
               className="font-cormorant text-[#7B552B] leading-4 mt-[9%]"
             >
               We are cordially inviting you to be part of <br />
@@ -76,9 +77,10 @@ const Profile = () => {
             </h2>
           </div>
 
-          <div className="flex flex-col items-center -mt-[5%]">
+          <div className="flex flex-col items-center -mt-[2%]">
             <p
              data-aos="fade-up" data-aos-delay="100"
+               style={{ fontSize: "3.33vw" }}
               className="font-cormorant font-bold text-[#7B552B]"
             >
               Together with our families
@@ -110,7 +112,7 @@ const Profile = () => {
             </p>
           </div>
 
-          <div className="-mt-[8%]">
+          <div className="-mt-[6%]">
             <p
             data-aos="fade-up" data-aos-delay="900"
               style={{ fontSize: "3.2vw" }}

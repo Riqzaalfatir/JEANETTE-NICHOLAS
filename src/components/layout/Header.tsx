@@ -81,7 +81,7 @@ const Header = ({ open, setOpen }: HeaderProps) => {
             }}
             transition={{ type: "spring", stiffness: 260, damping: 20 }}
             style={{ originX: 0, originY: 0 }}
-            className="absolute top-4 left-3 bg-[#FEFBF0]/50 py-4 md:p-8 text-white  w-full max-w-[255px] md:max-w-[280px] z-0"
+            className="absolute top-4 left-4 bg-[#FEFBF0]/50 py-4 md:p-8 text-white  w-full max-w-[255px] md:max-w-[280px] z-0"
           >
 
             {/* CLOSE */}
@@ -91,7 +91,7 @@ const Header = ({ open, setOpen }: HeaderProps) => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="absolute -top-3 left-1"
+              className="absolute -top-2.5 left-2"
             >
              <p className="font-light text-[32px] text-black font-ibm">x</p>
             </motion.button>
@@ -101,7 +101,7 @@ const Header = ({ open, setOpen }: HeaderProps) => {
               variants={container}
               initial="hidden"
               animate="show"
-              className="pt-4 pl-[25px] md:pl-4 space-y-1.5 text-[12px] md:text-[14px] tracking-widest text-black font-sans font-medium flex flex-col"
+              className="pt-4 pl-9 md:pl-4 space-y-1.5 text-[12px] md:text-[14px] tracking-widest text-black font-sans font-medium flex flex-col"
             >
               {linkMenu.map((menu) => (
                 <motion.a
