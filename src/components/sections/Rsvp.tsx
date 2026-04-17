@@ -38,7 +38,7 @@ const Rsvp = () => {
         />
 
         {/* Ornamen bunga kanan atas */}
-        <Image
+        <Image data-aos="fade-in"
           src="/images/rsvp/Ornament-BungaAtas.svg"
           alt="flower top"
           width={200}
@@ -47,7 +47,7 @@ const Rsvp = () => {
         />
 
         {/* Ornamen bunga kiri bawah */}
-        <Image
+        <Image data-aos="fade-in"
           src="/images/rsvp/Ornament-BungaBawah.svg"
           alt="flower bottom"
           width={200}
@@ -57,25 +57,25 @@ const Rsvp = () => {
 
         {/* Container putih — tinggi ngikutin konten */}
         <div className="relative z-20 bg-[#FEFFF9] mx-[25px] mt-[48px] shadow-md text-center pb-[40%]">
-          <h2 className="font-david pt-[67px] font-bold text-[24px] text-[#CD4964]">
+          <h2 data-aos="fade-in" className="font-david pt-[67px] font-bold text-[24px] text-[#CD4964]">
             RSVP
           </h2>
 
-          <p className="mt-[35px] font-cormorant text-[13px] text-[#CD4964]">
+          <p data-aos="fade-up" data-aos-delay="100" className="mt-[35px] font-cormorant text-[13px] text-[#CD4964]">
             Dear Mr./Mrs./Ms.
           </p>
 
-          <p className="mt-[25px] font-cormorant text-[13px] font-bold text-[#CD4964]">
+          <p data-aos="fade-up" data-aos-delay="300" className="mt-[25px] font-cormorant text-[13px] font-bold text-[#CD4964]">
             .............
           </p>
 
-          <p className="mt-[34px] font-cormorant text-[13px] text-[#CD4964]">
+          <p data-aos="fade-up" data-aos-delay="500" className="mt-[34px] font-cormorant text-[13px] text-[#CD4964]">
             Kindly confirm your attendance before <br />
             <span className="font-bold">02 May 2026</span>
           </p>
 
           <div className="flex justify-center gap-4 mt-[31px]">
-            <button
+            <button data-aos="fade-right" data-aos-delay="700"
               onClick={() => {
                 setStatus("attend");
                 setOpenPopup(true);
@@ -89,7 +89,7 @@ const Rsvp = () => {
               ATTEND
             </button>
 
-            <button
+            <button data-aos="fade-left" data-aos-delay="700"
               onClick={() => {
                 setStatus("not");
               }}
@@ -102,19 +102,19 @@ const Rsvp = () => {
               NOT ATTEND
             </button>
           </div>
-          <p className="mt-[43px] font-cormorant text-[13px] text-[#CD4964]">
+          <p data-aos="fade-in" data-aos-delay="1100" className="mt-[43px] font-cormorant text-[13px] text-[#CD4964]">
             ARE YOU SURE?
           </p>
 
-          <button className="mt-[43px] font-cormorant text-[13px] bg-[#F9732A] text-[#FEFBF0] font-semibold w-[200px] h-[30px] rounded-full">
+          <button data-aos="fade-up" data-aos-delay="1100" className="mt-[43px] font-cormorant text-[13px] bg-[#F9732A] text-[#FEFBF0] font-semibold w-[200px] h-[30px] rounded-full">
             CONFIRM NOT ATTEND
           </button>
 
-          <p className="mt-[43px] font-cormorant text-[13px] text-[#CD4964]">
+          <p data-aos="fade-in" data-aos-delay="1500" className="mt-[43px] font-cormorant text-[13px] text-[#CD4964]">
             Having trouble with RSVP?
           </p>
 
-          <button onClick={waHelpdesk} className="mt-[22px] mx-auto font-cormorant text-[13px] bg-[#F9732A] text-[#FEFBF0] font-semibold w-[200px] h-[30px] rounded-full flex items-center justify-center gap-1">
+          <button data-aos="fade-up" data-aos-delay="1500" onClick={waHelpdesk} className="mt-[22px] mx-auto font-cormorant text-[13px] bg-[#F9732A] text-[#FEFBF0] font-semibold w-[200px] h-[30px] rounded-full flex items-center justify-center gap-1">
             <Image
               src="/images/rsvp/lonceng.svg"
               alt="wa"

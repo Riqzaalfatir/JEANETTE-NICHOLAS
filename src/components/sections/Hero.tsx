@@ -38,25 +38,37 @@ const Hero = () => {
         {/* CONTENT */}
 
         <div className="absolute inset-0 flex flex-col justify-end items-center pb-[28%] text-center z-10">
-            <motion.p
+            {/* <motion.p
             className="text-white font-cormorant font-semibold text-[16px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
           >
             The Sangjit of
-          </motion.p>
+          </motion.p> */}
 
-          <motion.h1
+            <p data-aos="fade-up"
+            className="text-white font-cormorant font-semibold text-[16px]"
+          >
+            The Sangjit of
+          </p>
+
+          {/* <motion.h1
             className="text-white font-david text-[28px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.9 }}
           >
             JEANETTE & NICHOLAS
+          </motion.h1> */}
+          <motion.h1
+            className="text-white font-david text-[28px]"
+            data-aos="fade-up" data-aos-delay="100"
+          >
+            JEANETTE & NICHOLAS
           </motion.h1>
 
-          <p className="text-white font-cormorant font-bold text-[13px]">
+          <p data-aos="fade-up" data-aos-delay="300" className="text-white font-cormorant font-bold text-[13px]">
             SATURDAY, 16 MAY 2026
           </p>
         </div>

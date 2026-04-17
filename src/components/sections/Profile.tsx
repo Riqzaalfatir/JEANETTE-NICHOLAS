@@ -54,10 +54,8 @@ const Profile = () => {
 
         <div className="relative z-10 w-full h-full pt-[15%] pb-[20%]  flex flex-col items-center text-center justify-between">
           <div className="flex flex-col items-center">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.5, ease: "easeOut", delay: 0.0 }}
+            <div
+              data-aos="fade-in"
               className="w-[20%]"
             >
               <Image
@@ -67,126 +65,95 @@ const Profile = () => {
                 height={100}
                 className="w-full h-auto"
               />
-            </motion.div>
+            </div>
 
-            <motion.h2
-              style={{ fontSize: "3.2vw" }}
+            <h2
+              data-aos="fade-up"
               className="font-cormorant text-[#7B552B] leading-4 mt-[9%]"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
             >
               We are cordially inviting you to be part of <br />
               our engagement celebration
-            </motion.h2>
+            </h2>
           </div>
 
           <div className="flex flex-col items-center -mt-[5%]">
-            <motion.p
-             initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-              style={{ fontSize: "3.2vw" }}
+            <p
+             data-aos="fade-up" data-aos-delay="100"
               className="font-cormorant font-bold text-[#7B552B]"
             >
               Together with our families
-            </motion.p>
+            </p>
           </div>
 
           <div className="flex flex-col items-center">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+            <h1
+              data-aos="fade-in" data-aos-delay="700"
               style={{ fontSize: "8vw" }}
               className="text-[#FF751F] font-signature -mt-[16%]"
             >
               Jeanette Natasha
-            </motion.h1>
-            <motion.p
-             initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.7 }}
+            </h1>
+            <p
+            data-aos="fade-up" data-aos-delay="500"
               style={{ fontSize: "3.2vw" }}
               className="font-cormorant font-bold text-[#7B552B] mt-[8%]"
             >
               The Daughter of
-            </motion.p>
-            <motion.p
-             initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.9 }}
+            </p>
+            <p
+            data-aos="fade-up" data-aos-delay="700"
               style={{ fontSize: "3.2vw" }}
               className="font-cormorant text-[#7B552B] leading-4 mt-[10%]"
             >
               Mr. Na Eng Siang and <br />
               Mrs. Djuliawati Tan
-            </motion.p>
+            </p>
           </div>
 
           <div className="-mt-[8%]">
-            <motion.p
-             initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.11 }}
+            <p
+            data-aos="fade-up" data-aos-delay="900"
               style={{ fontSize: "3.2vw" }}
               className="font-cormorant font-bold italic text-[#7B552B]"
             >
               and
-            </motion.p>
+            </p>
           </div>
 
           <div className="flex flex-col items-center -mt-[8%]">
-            <motion.h1
-           initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.13 }}
+            <h1
+          data-aos="fade-in" data-aos-delay="1500"
               style={{ fontSize: "8vw" }}
               className="text-[#FF751F] font-signature"
             >
               Nicholas Chua
-            </motion.h1>
-            <motion.p
-             initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
+            </h1>
+            <p
+               data-aos="fade-up" data-aos-delay="1300"
               style={{ fontSize: "3.2vw" }}
               className="font-cormorant font-bold text-[#7B552B] mt-[8%]"
             >
               The Son of
-            </motion.p>
-            <motion.p
-             initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.17 }}
+            </p>
+            <p
+              data-aos="fade-up" data-aos-delay="1350"
               style={{ fontSize: "3.2vw" }}
               className="font-cormorant text-[#7B552B] leading-4 mt-[7%]"
             >
               Mr. Chua Sui Hian and <br />
               Mrs. Go Lie Lien
-            </motion.p>
+            </p>
           </div>
 
           <div>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.19 }}
+            <p
+             data-aos="fade-in" 
               style={{ fontSize: "3.2vw" }}
               className="font-cormorant text-[#7B552B] leading-4"
             >
               our joy will be completed with <br />
               your presence and blessings
-            </motion.p>
+            </p>
           </div>
         </div>
       </div>

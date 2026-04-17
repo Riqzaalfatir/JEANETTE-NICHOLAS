@@ -28,7 +28,7 @@ const Dresscode = () => {
       />
 
       {/* ORNAMEN BUNGA KIRI */}
-      <Image
+      <Image data-aos="fade-right" 
         src="/images/dresscode/Ornament-BungaKiri.svg"
         alt=""
         width={200}
@@ -37,7 +37,7 @@ const Dresscode = () => {
       />
 
       {/* ORNAMEN BUNGA KANAN */}
-      <Image
+      <Image data-aos="fade-left" 
         src="/images/dresscode/Ornament-BungaKanan.svg"
         alt=""
         width={250}
@@ -46,7 +46,7 @@ const Dresscode = () => {
       />
 
       {/* ORNAMEN BUNGA TENGAH */}
-      <Image
+      <Image data-aos="fade-in" 
         src="/images/dresscode/Ornament-BungaTengah.svg"
         alt=""
         width={250}
@@ -55,7 +55,7 @@ const Dresscode = () => {
       />
 
       {/* ORNAMEN GUCI */}
-      <Image
+      <Image  
         src="/images/dresscode/Ornament-Guci.svg"
         alt=""
         width={140}
@@ -65,15 +65,15 @@ const Dresscode = () => {
 
       {/* CONTENT */}
       <div className="absolute inset-0 z-30 flex flex-col items-center text-center px-8 leading-none">
-        <h2 className="text-[6.2vw] font-david font-bold text-[#CD4964] mt-[32vw]">
+        <h2 data-aos="fade-in" className="text-[6.2vw] font-david font-bold text-[#CD4964] mt-[32vw]">
           DRESSCODE
         </h2>
-        <p className="mt-[8%] text-[3.33vw] text-[#CD4964] font-cormorant leading-4">
+        <p data-aos="fade-in" data-aos-delay="100" className="mt-[8%] text-[3.33vw] text-[#CD4964] font-cormorant leading-4">
           we would sincerely appreciate<br />
           your presence in<br />
           peranakan kebaya / cheongsam / batik attire
         </p>
-        <div className="-mt-[2%]">
+        <div data-aos="fade-in" data-aos-delay="300" className="-mt-[2%]">
           <Image
             src="/images/dresscode/Ornament-Orang.svg"
             alt="dresscode"

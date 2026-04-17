@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Cormorant, David_Libre, Noto_Sans, IBM_Plex_Sans} from "next/font/google";
+import "aos/dist/aos.css";
 import "./globals.css";
 import localFont from "next/font/local";
 

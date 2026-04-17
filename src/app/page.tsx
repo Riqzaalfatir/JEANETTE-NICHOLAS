@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
 import Hero from "@/components/sections/Hero";
 import Profile from "@/components/sections/Profile";
 import Waktu from "@/components/sections/Waktu";
@@ -15,6 +16,14 @@ import Opening from "@/components/popup/Opening";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [start, setStart] = useState(false);
+
+useEffect(() => {
+  AOS.init({
+    duration: 1200,
+    once: true,
+    easing: "ease-out-cubic",
+  });
+}, []);
 
   return (
     <>
