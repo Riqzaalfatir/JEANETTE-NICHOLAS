@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -18,27 +19,42 @@ const Hero = () => {
 
         {/* <div className='absolute inset-0 bg-black/30' /> */}
 
-        <div className="absolute top-[7%] left-1/2 -translate-x-1/2 z-10">
+          {/* Logo / Ornament — fade in */}
+        <motion.div
+          className="absolute top-[7%] left-1/2 -translate-x-1/2 z-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+        >
           <Image
             src="/images/hero/Ornament-Hero.svg"
             alt="ornament"
             width={85}
             height={110}
-            className=""
           />
-        </div>
+        </motion.div>
 
 
         {/* CONTENT */}
 
         <div className="absolute inset-0 flex flex-col justify-end items-center pb-[28%] text-center z-10">
-          <p className="text-white font-cormorant font-semibold text-[16px]">
+            <motion.p
+            className="text-white font-cormorant font-semibold text-[16px]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+          >
             The Sangjit of
-          </p>
+          </motion.p>
 
-          <h1 className="text-white font-david text-[28px]">
+          <motion.h1
+            className="text-white font-david text-[28px]"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.9 }}
+          >
             JEANETTE & NICHOLAS
-          </h1>
+          </motion.h1>
 
           <p className="text-white font-cormorant font-bold text-[13px]">
             SATURDAY, 16 MAY 2026

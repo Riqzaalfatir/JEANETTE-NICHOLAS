@@ -52,7 +52,7 @@ const Rsvp = () => {
           alt="flower bottom"
           width={200}
           height={160}
-          className="absolute bottom-0 left-0 z-30 w-[50%] h-auto"
+          className="absolute -bottom-2 left-0 z-30 w-[50%] h-auto"
         />
 
         {/* Container putih — tinggi ngikutin konten */}

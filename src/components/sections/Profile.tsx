@@ -1,12 +1,26 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 },
+};
 
 const Profile = () => {
   return (
-    <div
-      className="relative w-full overflow-hidden flex items-center justify-center"
-      style={{ aspectRatio: "390/725" }}
-    >
+<div className="relative w-full  mx-auto overflow-hidden flex items-center justify-center aspect-[390/725]">
+    
       <img
         src="/images/profile/Bg-Profile.png"
         alt=""
@@ -40,92 +54,139 @@ const Profile = () => {
 
         <div className="relative z-10 w-full h-full pt-[15%] pb-[20%]  flex flex-col items-center text-center justify-between">
           <div className="flex flex-col items-center">
-            <Image
-              src="/images/profile/Logo-Provile.svg"
-              alt="ornament"
-              width={43}
-              height={100}
-              className="w-[20%] h-auto"
-            />
-            <h2
-              style={{ fontSize: "3.2vw" }}
-              className="font-cormorant text-[#7B552B] leading-4 mt-[6%]"
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5, ease: "easeOut", delay: 0.0 }}
+              className="w-[20%]"
             >
-              We are cordially inviting you to be part of <br /> our engagement
-              celebration
-            </h2>
+              <Image
+                src="/images/profile/Logo-Provile.svg"
+                alt="ornament"
+                width={43}
+                height={100}
+                className="w-full h-auto"
+              />
+            </motion.div>
+
+            <motion.h2
+              style={{ fontSize: "3.2vw" }}
+              className="font-cormorant text-[#7B552B] leading-4 mt-[9%]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+            >
+              We are cordially inviting you to be part of <br />
+              our engagement celebration
+            </motion.h2>
           </div>
 
-          <div className="flex flex-col items-center">
-            <p
+          <div className="flex flex-col items-center -mt-[5%]">
+            <motion.p
+             initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
               style={{ fontSize: "3.2vw" }}
               className="font-cormorant font-bold text-[#7B552B]"
             >
               Together with our families
-            </p>
+            </motion.p>
           </div>
 
           <div className="flex flex-col items-center">
-            <h1
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
               style={{ fontSize: "8vw" }}
-              className="text-[#FF751F] font-signature -mt-[10%]"
+              className="text-[#FF751F] font-signature -mt-[16%]"
             >
               Jeanette Natasha
-            </h1>
-            <p
+            </motion.h1>
+            <motion.p
+             initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.7 }}
               style={{ fontSize: "3.2vw" }}
-              className="font-cormorant font-bold text-[#7B552B] mt-[4%]"
+              className="font-cormorant font-bold text-[#7B552B] mt-[8%]"
             >
               The Daughter of
-            </p>
-            <p
+            </motion.p>
+            <motion.p
+             initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.9 }}
               style={{ fontSize: "3.2vw" }}
-              className="font-cormorant text-[#7B552B] leading-4 mt-[7%]"
+              className="font-cormorant text-[#7B552B] leading-4 mt-[10%]"
             >
               Mr. Na Eng Siang and <br />
               Mrs. Djuliawati Tan
-            </p>
+            </motion.p>
           </div>
 
           <div className="-mt-[8%]">
-            <p
+            <motion.p
+             initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.11 }}
               style={{ fontSize: "3.2vw" }}
               className="font-cormorant font-bold italic text-[#7B552B]"
             >
               and
-            </p>
+            </motion.p>
           </div>
 
-          <div className="flex flex-col items-center -mt-[10%]">
-            <h1
+          <div className="flex flex-col items-center -mt-[8%]">
+            <motion.h1
+           initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.13 }}
               style={{ fontSize: "8vw" }}
               className="text-[#FF751F] font-signature"
             >
               Nicholas Chua
-            </h1>
-            <p
+            </motion.h1>
+            <motion.p
+             initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
               style={{ fontSize: "3.2vw" }}
-              className="font-cormorant font-bold text-[#7B552B] mt-[4%]"
+              className="font-cormorant font-bold text-[#7B552B] mt-[8%]"
             >
               The Son of
-            </p>
-            <p
+            </motion.p>
+            <motion.p
+             initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.17 }}
               style={{ fontSize: "3.2vw" }}
               className="font-cormorant text-[#7B552B] leading-4 mt-[7%]"
             >
               Mr. Chua Sui Hian and <br />
               Mrs. Go Lie Lien
-            </p>
+            </motion.p>
           </div>
 
           <div>
-            <p
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.19 }}
               style={{ fontSize: "3.2vw" }}
               className="font-cormorant text-[#7B552B] leading-4"
             >
               our joy will be completed with <br />
               your presence and blessings
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>

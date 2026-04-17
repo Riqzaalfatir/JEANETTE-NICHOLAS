@@ -3,18 +3,26 @@
   import { useState, useEffect } from "react";
   import Image from "next/image";
   import { motion, AnimatePresence } from "framer-motion";
+  
 
-  const Opening = ({ namaTamu = "Sela" }) => {
+type OpeningProps = {
+  setStart: (v: boolean) => void;
+  namaTamu?: string;
+};
+
+const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
     const [open, setOpen] = useState(true);
 
     useEffect(() => {
       document.body.style.overflow = "hidden";
     }, []);
 
-    const handleOpen = () => {
-      setOpen(false);
-      document.body.style.overflow = "auto";
-    };
+
+     const handleOpen = () => {
+    setStart(true);
+    document.body.style.overflow = "auto";
+  };
+    
 
     return (
       <AnimatePresence mode="wait" >

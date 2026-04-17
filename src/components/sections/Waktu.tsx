@@ -61,7 +61,7 @@ const Waktu = () => {
         />
 
         {/* CONTENT */}
-        <div className="absolute inset-0 flex flex-col items-center pt-[90px] text-center px-6 leading-none">
+        <div className="absolute inset-0 flex flex-col items-center pt-[98px] text-center px-6 leading-none">
           {/* DATE */}
           <div className="flex items-baseline  text-center gap-6 text-[#CD4964] ">
             <span className="text-[24px] font-cormorant font-semibold">
