@@ -44,35 +44,35 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
                 ease: "easeOut"
               }}
 
-              className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[430px] md:w-[406px] md:h-[520px] shadow-xl flex flex-col"
+              className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[430px] md:w-[416px] md:h-[540px] shadow-xl flex flex-col z-50"
             >
               <div className="relative w-full h-[182px] md:h-[220px] overflow-hidden">
                 <Image
-                  src="/images/opening/Opening.jpg"
+                  src="/images/popup/Popup.jpg"
                   alt="prewed"
                   fill
                   className="object-cover object-[50%_46%] md:object-[50%_70%]"
                 />
               </div>
 
-              <div className="flex flex-col items-center text-center px-4 pt-[28px] md:pt-[22px] pb-[40px] md:pb-[0px] flex-1 leading-none">
-                <p className="text-[13px] md:text-[14px] text-[#202F26] font-cormorant font-medium ">
+              <div className="flex flex-col items-center text-center px-4 pt-[28px] md:pt-[25px] pb-[40px] md:pb-[0px] flex-1 leading-none">
+                <p className="text-[13px] md:text-[14px] text-[#7B552B] font-cormorant font-medium ">
                   The Sangjit of
                 </p>
 
-                <h1 className="text-[24px] md:text-[36px] text-[#202F26] pt-[8px] md:pt-[12px] font-david uppercase">
+                <h1 className="text-[24px] md:text-[36px] text-[#7B552B] pt-[8px] md:pt-[15px] font-david uppercase">
                   JEANETTE & NICHOLAS
                 </h1>
 
-                <p className="text-[13px] md:text-[14px] text-[#202F26] font-cormorant font-medium pt-[14px] md:pt-[22px]">
+                <p className="text-[13px] md:text-[14px] text-[#7B552B] font-cormorant font-medium pt-[14px] md:pt-[24px]">
                   Dear Mr. / Mrs. / Ms.
                 </p>
 
-                <p className="text-[13px] md:text-[18px] font-medium font-cormorant text-[#202F26] pt-[11px] md:pt-[13px]">
+                <p className="text-[13px] md:text-[18px] font-medium font-cormorant text-[#7B552B] pt-[11px] md:pt-[13px]">
                   {namaTamu}
                 </p>
 
-                <p className="text-[10px] md:text-[12px]  text-[#202F26] font-cormorant pt-[15px] md:pt-[23px] leading-[1.2]">
+                <p className="text-[10px] md:text-[12px]  text-[#7B552B] font-cormorant pt-[15px] md:pt-[23px] leading-[1.2]">
                  We sincerely apologize<br />
                  for any misspelling of names or titles.
                 </p>

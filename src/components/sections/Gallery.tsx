@@ -4,16 +4,31 @@ import Image from 'next/image'
 const Gallery = () => {
   return (
     <>
-       <section className="relative w-full h-[700px] md:h-[573px] flex justify-center items-center overflow-hidden">
+      {/* ===== MOBILE ===== */}
+      <div className="relative w-full h-[700px] flex justify-center items-center overflow-hidden lg:hidden">
+        <Image
+          src="/images/gallery/Bg-Mobile.svg"
+          alt="background"
+          fill
+          priority
+          className="object-cover object-top"
+        />
 
-         <Image
-                src="/images/gallery/Bg-Gallery.jpg"
-                alt="background"
-                fill
-                className="object-cover object-top"
-              />
-        
-    </section>
+      </div>
+
+      {/* ===== DESKTOP ===== */}
+      <div
+        className="relative hidden lg:block w-full overflow-hidden"
+        style={{ aspectRatio: "1512/942" }}
+      >
+        <Image
+          src="/images/gallery/Bg-Dekstop.svg"
+          alt="background"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
     </>
   )
 }

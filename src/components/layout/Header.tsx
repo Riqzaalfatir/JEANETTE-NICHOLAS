@@ -140,7 +140,7 @@ const Header = ({ open, setOpen }: HeaderProps) => {
                 duration: 0.6,
                 ease: "easeOut"
               }}
-              className="pt-[20px] text-black ml-7 md:ml-4 text-[8px] md:text-[12px] font-sans font-light"
+              className="pt-[20px] text-black ml-9 md:ml-4 text-[8px] md:text-[12px] font-sans font-light"
             >
               Select a section above to continue
             </motion.p>
