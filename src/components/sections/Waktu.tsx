@@ -164,52 +164,78 @@ const Waktu = () => {
           <Image src="/images/waktu/Ornament-Bg.svg" alt="panel" fill className="object-contain scale-y-110" />
 
           {/* CONTENT */}
-          <div
-            className="absolute inset-0 flex flex-col items-center text-center leading-none"
-            style={{ paddingTop: "7vw" }}
-          >
-            {/* DATE */}
-          {/* DATE */}
-            <div data-aos="fade-in" className="flex items-baseline text-center text-[#CD4964]" style={{ gap: "2.25vw" }}>
-              <span className="font-cormorant font-semibold" style={{ fontSize: "3.17vw" }}>MAY</span>
-              <div style={{ width: "0.17vw", height: "1.8vw", backgroundColor: "#CD4964" }} />
-              <span className="font-semibold font-cormorant leading-none" style={{ fontSize: "6.35vw" }}>16</span>
-              <div style={{ width: "0.17vw", height: "1.8vw", backgroundColor: "#CD4964" }} />
-              <span className="font-cormorant font-semibold" style={{ fontSize: "3.17vw" }}>2026</span>
-            </div>
+        <motion.div
+  className="absolute inset-0 flex flex-col items-center text-center leading-none"
+  style={{ paddingTop: "7vw" }}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.3 }}
+  variants={{
+    hidden: {},
+    show: { transition: { staggerChildren: 0.3 } },
+  }}
+>
+  {/* DATE */}
+  <motion.div
+    className="flex items-baseline text-center text-[#CD4964]"
+    style={{ gap: "2.25vw" }}
+    variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+  >
+    <span className="font-cormorant font-semibold" style={{ fontSize: "3.17vw" }}>MAY</span>
+    <div style={{ width: "0.17vw", height: "1.8vw", backgroundColor: "#CD4964" }} />
+    <span className="font-semibold font-cormorant leading-none" style={{ fontSize: "6.35vw" }}>16</span>
+    <div style={{ width: "0.17vw", height: "1.8vw", backgroundColor: "#CD4964" }} />
+    <span className="font-cormorant font-semibold" style={{ fontSize: "3.17vw" }}>2026</span>
+  </motion.div>
 
-            {/* TIME */}
-            <div className="flex text-[#CD4964]" style={{ gap: "1.5vw", marginTop: "0.66vw" }}>
-              <div data-aos="fade-right" style={{ width: "1.85vw", height: "0.13vw", backgroundColor: "#CD4964", marginTop: "1vw" }} />
-              <p data-aos="fade-up" className="font-semibold font-cormorant" style={{ fontSize: "2.12vw" }}>11.00 WIB</p>
-              <div data-aos="fade-left" style={{ width: "1.85vw", height: "0.13vw", backgroundColor: "#CD4964", marginTop: "1vw" }} />
-            </div>
+  {/* TIME */}
+  <motion.div
+    className="flex text-[#CD4964]"
+    style={{ gap: "1.5vw", marginTop: "0.66vw" }}
+    variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+  >
+    <div style={{ width: "1.85vw", height: "0.13vw", backgroundColor: "#CD4964", marginTop: "1vw" }} />
+    <p className="font-semibold font-cormorant" style={{ fontSize: "2.12vw" }}>11.00 WIB</p>
+    <div style={{ width: "1.85vw", height: "0.13vw", backgroundColor: "#CD4964", marginTop: "1vw" }} />
+  </motion.div>
 
-            {/* TITLE */}
-            <p data-aos="fade-up" data-aos-delay="100" className="font-bold text-[#CD4964] font-david" style={{ marginTop: "4.56vw", fontSize: "1.46vw" }}>
-              SANGJIT CEREMONY
-            </p>
+  {/* TITLE */}
+  <motion.p
+    className="font-bold text-[#CD4964] font-david"
+    style={{ marginTop: "4.56vw", fontSize: "1.46vw" }}
+    variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+  >
+    SANGJIT CEREMONY
+  </motion.p>
 
-            {/* LOCATION */}
-            <p data-aos="fade-up" data-aos-delay="300" className="font-cormorant text-[#CD4964] font-bold" style={{ marginTop: "3.64vw", fontSize: "1.32vw", lineHeight: "1.85vw" }}>
-              Royal Dynasty Restaurant <br /> 2nd Floor
-            </p>
+  {/* LOCATION */}
+  <motion.p
+    className="font-cormorant text-[#CD4964] font-bold"
+    style={{ marginTop: "3.64vw", fontSize: "1.32vw", lineHeight: "1.85vw" }}
+    variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+  >
+    Royal Dynasty Restaurant <br /> 2nd Floor
+  </motion.p>
 
-            <p data-aos="fade-up" data-aos-delay="500" className="font-cormorant text-[#CD4964]" style={{ marginTop: "2.98vw", fontSize: "1.32vw" }}>
-              Jl. Jend. Sudirman No.232A, Bandung
-            </p>
+  <motion.p
+    className="font-cormorant text-[#CD4964]"
+    style={{ marginTop: "2.98vw", fontSize: "1.32vw" }}
+    variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+  >
+    Jl. Jend. Sudirman No.232A, Bandung
+  </motion.p>
 
-            {/* BUTTON */}
-            <button
-              data-aos="fade-up"
-              data-aos-delay="660"
-              onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=Jl.%20Jendral%20Sudirman%20No.%20232A%20Bandung", "_blank")}
-              className="bg-[#FF751F] text-white rounded-full font-bold font-cormorant"
-              style={{ marginTop: "2.38vw", width: "14.81vw", height: "2.65vw", fontSize: "1.32vw" }}
-            >
-              GOOGLE MAPS
-            </button>
-          </div>
+  {/* BUTTON */}
+  <motion.button
+    onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=Jl.%20Jendral%20Sudirman%20No.%20232A%20Bandung", "_blank")}
+    className="bg-[#FF751F] text-white rounded-full font-bold font-cormorant"
+    style={{ marginTop: "2.38vw", width: "14.81vw", height: "2.65vw", fontSize: "1.32vw" }}
+    variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 1 } } }}
+  >
+    GOOGLE MAPS
+  </motion.button>
+
+</motion.div>
         </div>
 
         {/* ORNAMEN BAWAH */}
