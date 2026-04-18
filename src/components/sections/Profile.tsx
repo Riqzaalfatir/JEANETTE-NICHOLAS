@@ -93,7 +93,7 @@ const Profile = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={{
               hidden: {},
-              show: { transition: { staggerChildren: 0.7 } },
+              show: { transition: { staggerChildren: 0.25 } },
             }}
           >
             {/* Logo + h2 */}

@@ -172,7 +172,7 @@ const Waktu = () => {
   viewport={{ once: true, amount: 0.3 }}
   variants={{
     hidden: {},
-    show: { transition: { staggerChildren: 0.3 } },
+    show: { transition: { staggerChildren: 0.25 } },
   }}
 >
   {/* DATE */}
