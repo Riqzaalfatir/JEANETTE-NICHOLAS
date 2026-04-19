@@ -114,7 +114,7 @@ const Profile = () => {
               className="flex flex-col items-center"
               variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
             >
-              <p className="font-cormorant font-bold text-[#7B552B]" style={{ fontSize: "1.32vw" }}>
+              <p className="font-cormorant font-bold text-[#7B552B] -mt-[0.5vw]" style={{ fontSize: "1.32vw" }}>
                 Together with our families
               </p>
             </motion.div>

@@ -205,8 +205,8 @@ const Waktu = () => {
 
       {/* ===== DESKTOP ===== */}
       <div
-        className="relative hidden lg:block w-full overflow-hidden"
-        style={{ aspectRatio: "1512/945" }}
+        className="relative hidden lg:block w-full overflow-hidden z-10"
+        style={{ aspectRatio: "1512/945", boxShadow: "4px 1px 17px 0px rgba(0,0,0,0.85)" }}
       >
         {/* BACKGROUND */}
         <Image
@@ -308,7 +308,7 @@ const Waktu = () => {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            width: "45vw",
+            width: "47vw",
             height: "85%",
             marginTop: "0.5vw",
           }}
@@ -317,13 +317,13 @@ const Waktu = () => {
             src="/images/waktu/Ornament-Bg.svg"
             alt="panel"
             fill
-            className="object-contain scale-y-110"
+            className="object-contain scale-y-105 scale-x-105"
           />
 
           {/* CONTENT */}
           <motion.div
             className="absolute inset-0 flex flex-col items-center text-center leading-none"
-            style={{ paddingTop: "7vw" }}
+            style={{ paddingTop: "8vw" }}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}

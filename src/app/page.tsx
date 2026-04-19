@@ -26,22 +26,23 @@ useEffect(() => {
 }, []);
 
   return (
-    <>
-      <Header open={menuOpen} setOpen={setMenuOpen} />
+  <>
+    <Header open={menuOpen} setOpen={setMenuOpen} />
+    {!start && <Opening setStart={setStart} />}
 
-      {!start && <Opening setStart={setStart} />}
-
+    <div className="min-h-screen flex flex-col">
       <div style={{ overflowX: "hidden" }}>
-  <Hero />
-  <Profile />
-  <Waktu />
-  <Dresscode />
-  <Rsvp />
-  <Gallery />
-  <Thankyou />
-</div>
-  <Footer />
+        <Hero />
+        <Profile />
+        <Waktu />
+        <Dresscode />
+        <Rsvp />
+        <Gallery />
+      </div>
 
-    </>
-  );
+      <Thankyou />
+      <Footer />
+    </div>
+  </>
+);
 }

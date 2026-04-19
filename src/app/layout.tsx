@@ -56,7 +56,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${davidLibre.variable} ${signature.variable} ${notoSans.variable} ${ibmPlex.variable} `}>
-      <body>{children}</body>
+      <body >{children}</body>
     </html>
   );
 }
