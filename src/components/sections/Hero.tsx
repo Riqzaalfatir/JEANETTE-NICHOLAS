@@ -11,7 +11,7 @@ const Hero = () => {
         style={{ aspectRatio: "390/854" }}
       >
         <Image
-          src="/images/hero/Bg-Hero.jpg"
+          src="/images/hero/Bg-Hero.K.webp"
           alt="Background Hero"
           fill
           className="object-cover object-bottom"
@@ -51,7 +51,7 @@ const Hero = () => {
         style={{ aspectRatio: "1512/945" }}
       >
         <Image
-          src="/images/hero/Bg-Dekstop1.jpg"
+          src="/images/hero/Bg-Dekstop.K.webp"
           alt="Background Hero"
           fill
           className="object-cover object-top"
