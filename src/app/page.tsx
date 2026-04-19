@@ -31,22 +31,17 @@ useEffect(() => {
 
       {!start && <Opening setStart={setStart} />}
 
-      <div className="min-h-screen flex flex-col">
-        <main className="flex-1">
-<div style={{ overflowX: "hidden" }}>
-            <Hero />
-            <Profile />
-            <Waktu />
-            <Dresscode />
-            <Rsvp />
-            <Gallery />
-            <Thankyou />
-                    <Footer />
+      <div style={{ overflowX: "hidden" }}>
+  <Hero />
+  <Profile />
+  <Waktu />
+  <Dresscode />
+  <Rsvp />
+  <Gallery />
+  <Thankyou />
+</div>
+  <Footer />
 
-          </div>
-        </main>
-
-      </div>
     </>
   );
 }

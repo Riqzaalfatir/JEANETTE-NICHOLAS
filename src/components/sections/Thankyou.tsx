@@ -7,7 +7,6 @@ const Thankyou = () => {
       {/* ===== MOBILE ===== */}
       <div
         className="relative z-10 lg:hidden"
-        style={{ boxShadow: "4px 1px 17px 0px rgba(0,0,0,0.85)" }}
       >
         <div
           className="relative w-full overflow-hidden"
