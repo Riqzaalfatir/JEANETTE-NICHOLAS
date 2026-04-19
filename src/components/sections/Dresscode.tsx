@@ -72,14 +72,14 @@ const Dresscode = () => {
         <div className="absolute inset-0 z-30 flex flex-col items-center text-center px-8 leading-none">
           <h2
             data-aos="fade-in"
-            className="text-[6.2vw] font-david font-bold text-[#CD4964] mt-[32vw]"
+            className="text-[6.2vw] font-david font-bold text-[#CD4964] mt-[30vw]"
           >
             DRESSCODE
           </h2>
           <p
             data-aos="fade-in"
             data-aos-delay="100"
-            className="mt-[8%] text-[3.33vw] text-[#CD4964] font-cormorant leading-4"
+            className="mt-[7.5%] text-[3.33vw] text-[#CD4964] font-cormorant leading-4"
           >
             we would sincerely appreciate
             <br />
