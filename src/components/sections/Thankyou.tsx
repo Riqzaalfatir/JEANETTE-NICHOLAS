@@ -17,7 +17,7 @@ const Thankyou = () => {
 
           {/* ORNAMEN BUNGA KIRI */}
           <Image data-aos="fade-right"
-            src="/images/thankyou/Ornament-BungaKiri.svg"
+            src="/images/thankyou/Ornament-BungaKiri.webp"
             alt=""
             width={400}
             height={400}
@@ -26,7 +26,7 @@ const Thankyou = () => {
 
           {/* ORNAMEN BUNGA KANAN */}
           <Image data-aos="fade-left"
-            src="/images/thankyou/Ornament-BungaKanan.svg"
+            src="/images/thankyou/Ornament-BungaKanan.webp"
             alt=""
             width={250}
             height={250}
@@ -35,11 +35,11 @@ const Thankyou = () => {
 
           {/* ORNAMEN BUNGA TENGAH */}
           <Image data-aos="fade-in"
-            src="/images/thankyou/Ornament-BungaTengah.svg"
+            src="/images/thankyou/Ornament-BungaTengah.png"
             alt=""
             width={200}
             height={200}
-            className="absolute bottom-[7%] right-[22%] z-10 w-[51%] h-auto"
+            className="absolute bottom-[6%] right-[22%] z-10 w-[49%] h-auto"
           />
 
           {/* FRAME */}
@@ -92,7 +92,7 @@ const Thankyou = () => {
           {/* ORNAMEN BUNGA KIRI */}
           <Image
             data-aos="fade-right"
-            src="/images/thankyou/Ornament-BungaKiri.svg"
+            src="/images/thankyou/Ornament-BungaKiri.webp"
             alt=""
             width={400}
             height={400}
@@ -103,7 +103,7 @@ const Thankyou = () => {
           {/* ORNAMEN BUNGA KANAN */}
           <Image
             data-aos="fade-left"
-            src="/images/thankyou/Ornament-BungaKanan.svg"
+            src="/images/thankyou/Ornament-BungaKanan.webp"
             alt=""
             width={250}
             height={250}
@@ -114,7 +114,7 @@ const Thankyou = () => {
           {/* ORNAMEN BUNGA TENGAH */}
           <Image
             data-aos="fade-in"
-            src="/images/thankyou/Ornament-BungaTengah.svg"
+            src="/images/thankyou/Ornament-BungaTengah.png"
             alt=""
             width={200}
             height={200}

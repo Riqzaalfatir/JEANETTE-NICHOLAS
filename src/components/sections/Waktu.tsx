@@ -6,7 +6,7 @@ const Waktu = () => {
   return (
     <>
       {/* ===== MOBILE ===== */}
-      <div className="relative w-full h-[641px] flex justify-center items-center overflow-hidden lg:hidden">
+      <div className="relative w-full aspect-[390/641] mx-auto overflow-hidden flex items-center justify-center lg:hidden">
         {/* BACKGROUND */}
         <Image
           src="/images/waktu/Bg-Waktu.png"
@@ -17,10 +17,13 @@ const Waktu = () => {
         />
 
         {/* LAMPU ATAS */}
-        <div className="absolute top-0 left-0 w-full h-[120px] z-10">
+        <div
+          className="absolute top-0 left-0 w-full z-10"
+          style={{ height: "30.77vw" }}
+        >
           <motion.div
-            className="absolute -left-[0%] -top-[26%]"
-            style={{ transformOrigin: "top center" }}
+            className="absolute -left-[2%]"
+            style={{ transformOrigin: "top center", top: "-8vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
               duration: 8,
@@ -34,12 +37,13 @@ const Waktu = () => {
               alt=""
               width={165}
               height={110}
+              style={{ width: "42.31vw", height: "auto" }}
             />
           </motion.div>
 
           <motion.div
-            className="absolute left-[22%] -top-[60px]"
-            style={{ transformOrigin: "top center" }}
+            className="absolute left-[22%]"
+            style={{ transformOrigin: "top center", top: "-15.38vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
               duration: 6,
@@ -53,12 +57,13 @@ const Waktu = () => {
               alt=""
               width={85}
               height={110}
+              style={{ width: "21.79vw", height: "auto" }}
             />
           </motion.div>
 
           <motion.div
-            className="absolute right-[20%] -top-[60px]"
-            style={{ transformOrigin: "top center" }}
+            className="absolute right-[20%]"
+            style={{ transformOrigin: "top center", top: "-15.38vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
               duration: 6.5,
@@ -72,12 +77,13 @@ const Waktu = () => {
               alt=""
               width={85}
               height={110}
+              style={{ width: "21.79vw", height: "auto" }}
             />
           </motion.div>
 
           <motion.div
-            className="absolute -right-[12.5%] -top-[26%]"
-            style={{ transformOrigin: "top center" }}
+            className="absolute -right-[15%]"
+            style={{ transformOrigin: "top center", top: "-8vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
               duration: 8.5,
@@ -91,72 +97,122 @@ const Waktu = () => {
               alt=""
               width={165}
               height={110}
+              style={{ width: "42.31vw", height: "auto" }}
             />
           </motion.div>
         </div>
 
         {/* WRAPPER */}
-        <div className="relative w-full mt-[132px] max-w-[375px] h-[580px] flex justify-center items-center">
+        <div
+          className="relative w-full flex justify-center items-center"
+          style={{
+            marginTop: "33.85vw",
+            maxWidth: "96.15vw",
+            height: "148.72vw",
+          }}
+        >
           <Image
             src="/images/waktu/Ornament-Bg.svg"
             alt="panel"
             fill
             className="object-contain"
           />
-          <div className="absolute inset-0 flex flex-col items-center pt-[98px] text-center px-6 leading-none">
+          <div
+            className="absolute inset-0 flex flex-col items-center text-center leading-none"
+            style={{
+              paddingTop: "28.13vw",
+              paddingLeft: "1.54vw",
+              paddingRight: "1.54vw",
+            }}
+          >
+            {/* DATE */}
             <div
               data-aos="fade-in"
-              className="flex items-baseline text-center gap-6 text-[#CD4964]"
+              className="flex items-baseline text-center text-[#CD4964]"
+              style={{ gap: "6vw" }}
             >
-              <span className="text-[24px] font-cormorant font-semibold">
+              <span
+                className="font-cormorant font-semibold"
+                style={{ fontSize: "6.15vw" }}
+              >
                 MAY
               </span>
-              <div className="w-[2px] h-[22px] bg-[#CD4964]" />
-              <span className="text-[64px] font-semibold font-cormorant leading-none">
+              <div
+                className="w-[2px] bg-[#CD4964]"
+                style={{ height: "5.64vw" }}
+              />
+              <span
+                className="font-semibold font-cormorant leading-none"
+                style={{ fontSize: "16.41vw" }}
+              >
                 16
               </span>
-              <div className="w-[2px] h-[22px] bg-[#CD4964]" />
-              <span className="text-[24px] font-cormorant font-semibold">
+              <div
+                className="w-[2px] bg-[#CD4964]"
+                style={{ height: "5.64vw" }}
+              />
+              <span
+                className="font-cormorant font-semibold"
+                style={{ fontSize: "6.15vw" }}
+              >
                 2026
               </span>
             </div>
-            <div className="flex gap-3 mt-[4%] text-[#CD4964]">
+
+            {/* TIME */}
+            <div
+              className="flex text-[#CD4964]"
+              style={{ gap: "4vw", marginTop: "4%" }}
+            >
               <div
                 data-aos="fade-right"
-                className="w-[22px] mt-[15px] h-[2px] bg-[#CD4964]"
+                className="bg-[#CD4964]"
+                style={{ width: "5.64vw", height: "2px", marginTop: "3.85vw" }}
               />
               <p
                 data-aos="fade-up"
-                className="text-[24px] font-semibold font-cormorant"
+                className="font-semibold font-cormorant"
+                style={{ fontSize: "6.15vw" }}
               >
                 11.00 WIB
               </p>
               <div
                 data-aos="fade-left"
-                className="w-[22px] h-[2px] mt-[15px] bg-[#CD4964]"
+                className="bg-[#CD4964]"
+                style={{ width: "5.64vw", height: "2px", marginTop: "3.85vw" }}
               />
             </div>
+
+            {/* TITLE */}
             <p
               data-aos="fade-up"
               data-aos-delay="100"
-              className="mt-[43px] text-[16px] font-bold text-[#CD4964] font-david"
+              className="font-bold text-[#CD4964] font-david"
+              style={{ marginTop: "11.03vw", fontSize: "4.1vw" }}
             >
               SANGJIT CEREMONY
             </p>
+
+            {/* LOCATION */}
             <p
               data-aos="fade-up"
               data-aos-delay="300"
-              className="mt-[20px] text-[13px] font-cormorant text-[#CD4964] font-bold leading-4"
+              className="font-cormorant text-[#CD4964] font-bold leading-4"
+              style={{ marginTop: "5.13vw", fontSize: "3.33vw" }}
             >
               Royal Dynasty Restaurant <br /> 2nd Floor
             </p>
+
             <p
               data-aos="fade-up"
               data-aos-delay="500"
-              className="mt-[25px] text-[13px] font-cormorant text-[#CD4964]"
+              className="font-cormorant text-[#CD4964]"
+              style={{ marginTop: "6.41vw", fontSize: "3.33vw" }}
             >
               Jl. Jend. Sudirman No.232A, Bandung
             </p>
+
+            {/* BUTTON */}
             <button
               data-aos="fade-up"
               data-aos-delay="660"
@@ -166,50 +222,61 @@ const Waktu = () => {
                   "_blank",
                 )
               }
-              className="mt-[36px] bg-[#FF751F] text-white w-[160px] h-[30px] rounded-full text-[13px] font-bold font-cormorant"
+              className="bg-[#FF751F] text-white rounded-full font-bold font-cormorant"
+              style={{
+                marginTop: "9.23vw",
+                width: "41.03vw",
+                height: "7.69vw",
+                fontSize: "3.33vw",
+              }}
             >
               GOOGLE MAPS
             </button>
           </div>
         </div>
 
+        {/* ORNAMEN BAWAH */}
         <Image
           src="/images/waktu/Ornament-GuciDekstop.K.png"
           alt="guci"
           width={290}
           height={290}
-          className="absolute -bottom-0 -right-7"
-          style={{ width: "36.5vw" }}
+          className="absolute -bottom-0"
+          style={{ right: "-6vw", width: "36.2vw", height: "auto" }}
         />
         <Image
           src="/images/waktu/Ornament-BungaKiri.K.webp"
           alt="bunga kiri"
           width={290}
           height={290}
-          className="absolute -bottom-1 -left-[3.5%]"
-          style={{ width: "50vw" }}
+          className="absolute -bottom-1"
+          style={{ left: "-3.5%", width: "50vw", height: "auto" }}
         />
         <Image
           src="/images/waktu/Ornament-BungaKanan.webp"
           alt="bunga kanan"
           width={290}
           height={290}
-          className="absolute -bottom-0 right-0.5"
-          style={{ width: "50vw" }}
+          className="absolute -bottom-0"
+          style={{ right: "0.13vw", width: "50vw", height: "auto" }}
         />
         <Image
           src="/images/waktu/Ornament-BungaKanan.Kecil.K.webp"
           alt="bunga kanan"
           width={110}
           height={110}
-          className="absolute -bottom-1 -right-3"
+          className="absolute -bottom-1"
+          style={{ right: "-0.77vw", width: "28.21vw", height: "auto" }}
         />
       </div>
 
       {/* ===== DESKTOP ===== */}
       <div
         className="relative hidden lg:block w-full overflow-hidden z-10"
-        style={{ aspectRatio: "1512/945", boxShadow: "4px 1px 17px 0px rgba(0,0,0,0.85)" }}
+        style={{
+          aspectRatio: "1512/945",
+          boxShadow: "4px 1px 17px 0px rgba(0,0,0,0.85)",
+        }}
       >
         {/* BACKGROUND */}
         <Image
@@ -217,7 +284,7 @@ const Waktu = () => {
           alt="bg"
           fill
           priority
-          className="object-cover object-[50%_78%]"
+          className="object-cover object-center"
         />
 
         {/* LAMPU ATAS */}
@@ -243,7 +310,7 @@ const Waktu = () => {
           </motion.div>
 
           <motion.div
-            className="absolute left-[20%]"
+            className="absolute left-[18.5%]"
             style={{ transformOrigin: "top center", top: "0vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
@@ -263,7 +330,7 @@ const Waktu = () => {
           </motion.div>
 
           <motion.div
-            className="absolute right-[20%]"
+            className="absolute right-[18.5%]"
             style={{ transformOrigin: "top center", top: "0vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
@@ -283,7 +350,7 @@ const Waktu = () => {
           </motion.div>
 
           <motion.div
-            className="absolute -right-[2.9%]"
+            className="absolute -right-[3.5%]"
             style={{ transformOrigin: "top center", top: "-0.5vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
@@ -489,17 +556,17 @@ const Waktu = () => {
           alt="bunga kiri"
           width={195}
           height={140}
-          className="absolute -bottom-2 -left-7  h-auto"
+          className="absolute -bottom-3 -left-19  h-auto"
           style={{ width: "26vw" }}
         />
-       
+
         <Image
           src="/images/waktu/Ornament-BungaKanan.K.webp"
           alt="bunga kanan"
           width={200}
           height={200}
           className="absolute -bottom-0 right-11 h-auto"
-          style={{ width: "34.07vw" }}
+          style={{ width: "36.07vw" }}
         />
         <Image
           src="/images/waktu/Ornament-BungaKanan.Kecil.K.webp"

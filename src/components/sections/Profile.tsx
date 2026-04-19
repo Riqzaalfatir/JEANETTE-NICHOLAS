@@ -134,7 +134,7 @@ const Profile = () => {
       >
         {/* BG */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 object-center"
           style={{
             backgroundImage: "url('/images/profile/Bg-Profile.jpg')",
             backgroundRepeat: "repeat",

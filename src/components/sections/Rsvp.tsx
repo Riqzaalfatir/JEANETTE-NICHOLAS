@@ -23,7 +23,7 @@ const Rsvp = () => {
       <div className="relative w-full overflow-hidden lg:hidden">
         {/* BG */}
         <img
-          src="/images/rsvp/Bg-Rsvp.K.png"
+          src="/images/profile/Bg-Profile.K.png"
           alt=""
           className="absolute pointer-events-none z-0"
           style={{
@@ -39,7 +39,7 @@ const Rsvp = () => {
         {/* Ornamen bunga kanan atas */}
         <Image
           data-aos="fade-in"
-          src="/images/rsvp/Ornament-BungaAtas.svg"
+          src="/images/rsvp/Ornament-BungaAtas.png"
           alt="flower top"
           width={200}
           height={160}
@@ -49,7 +49,7 @@ const Rsvp = () => {
         {/* Ornamen bunga kiri bawah */}
         <Image
           data-aos="fade-in"
-          src="/images/rsvp/Ornament-BungaBawah.svg"
+          src="/images/rsvp/Ornament-BungaBawah.png"
           alt="flower bottom"
           width={200}
           height={160}
@@ -167,7 +167,7 @@ const Rsvp = () => {
         {/* Ornamen bunga kanan atas — posisi sesuai gambar, tidak di pojok */}
         <Image
           data-aos="fade-in"
-          src="/images/rsvp/BungaDs-KananAtas.svg"
+          src="/images/rsvp/BungaDekstopAtas.png"
           alt="flower top"
           width={200}
           height={160}
@@ -178,7 +178,7 @@ const Rsvp = () => {
         {/* Ornamen bunga kiri bawah — posisi sesuai gambar */}
         <Image
           data-aos="fade-in"
-          src="/images/rsvp/BungaDs-KiriBawah.svg"
+          src="/images/rsvp/BungaDekstopBawah.png"
           alt="flower bottom"
           width={200}
           height={160}

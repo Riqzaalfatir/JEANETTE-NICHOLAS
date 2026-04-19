@@ -17,7 +17,7 @@ const Dresscode = () => {
 
         {/* FRAME BG */}
         <img
-          src="/images/dresscode/Ornament-Bg.svg"
+          src="/images/dresscode/Ornament-BgMobile.K.webp"
           alt=""
           className="absolute pointer-events-none  z-50"
           style={{
@@ -32,7 +32,7 @@ const Dresscode = () => {
         {/* ORNAMEN BUNGA KIRI */}
         <Image
           data-aos="fade-right"
-          src="/images/dresscode/Ornament-BungaKiri.svg"
+          src="/images/dresscode/Ornament-BungaKiri.png"
           alt=""
           width={200}
           height={200}
@@ -42,26 +42,26 @@ const Dresscode = () => {
         {/* ORNAMEN BUNGA KANAN */}
         <Image
           data-aos="fade-left"
-          src="/images/dresscode/Ornament-BungaKanan.svg"
+          src="/images/dresscode/Ornament-BungaKanan.png"
           alt=""
           width={250}
           height={250}
-          className="absolute bottom-[7.5%] right-0 z-40 w-[53%] h-auto"
+          className="absolute bottom-[7%] right-0 z-40 w-[53%] h-auto"
         />
 
         {/* ORNAMEN BUNGA TENGAH */}
         <Image
           data-aos="fade-in"
-          src="/images/dresscode/Ornament-BungaTengah.svg"
+          src="/images/dresscode/Ornament-BungaTengah.png"
           alt=""
           width={250}
           height={250}
-          className="absolute bottom-[6%] right-[16%] z-30 w-[41%] h-auto"
+          className="absolute bottom-[4%] right-[17%] z-30 w-[41%] h-auto"
         />
 
         {/* ORNAMEN GUCI */}
         <Image
-          src="/images/dresscode/Ornament-Guci.svg"
+          src="/images/dresscode/Ornament-Guci.png"
           alt=""
           width={140}
           height={140}
@@ -113,9 +113,9 @@ const Dresscode = () => {
 
         {/* FRAME BG DESKTOP */}
         <img
-          src="/images/dresscode/Ornament-Dekstop.svg"
+          src="/images/dresscode/Ornament-BgDekstop.webp"
           alt=""
-          className="absolute inset-0 w-full h-full pointer-events-none z-50 scale-x-110 scale-y-105"
+          className="absolute inset-0 w-full h-full pointer-events-none z-50 scale-x-100 scale-y-105"
           style={{ objectFit: "fill" }}
         />
 
@@ -123,39 +123,57 @@ const Dresscode = () => {
       {/* ORNAMEN BUNGA KIRI */}
         <Image
           // data-aos="fade-right"
-          src="/images/dresscode/Ornament-BungaKiri.svg"
+          src="/images/dresscode/Ornament-BungaKiri.png"
           alt=""
           width={200}
           height={200}
           className="absolute z-10 h-auto"
-          style={{ bottom: "4.9vw", left: "29vw", width: "22vw" }}
+          style={{ bottom: "5.5vw", left: "30vw", width: "21vw" }}
         />
-
-        {/* ORNAMEN BUNGA KANAN */}
         <Image
           // data-aos="fade-left"
-          src="/images/dresscode/Ornament-BungaKanan.svg"
+          src="/images/dresscode/Ornament-BungaKanan.png"
           alt=""
           width={250}
           height={250}
           className="absolute z-40 h-auto"
           style={{ bottom: "3.5vw", right: "29.5vw", width: "22vw" }}
         />
+        {/* <Image
+          // data-aos="fade-left"
+          src="/images/dresscode/tes.png"
+          alt=""
+          width={250}
+          height={250}
+          className="absolute z-40 h-auto"
+          style={{ bottom: "35.5vw", right: "29.5vw", width: "40vw" }}
+        />
+        <Image
+          // data-aos="fade-left"
+          src="/images/dresscode/tes2.webp"
+          alt=""
+          width={250}
+          height={250}
+          className="absolute z-40 h-auto"
+          style={{ bottom: "15.5vw", right: "29.5vw", width: "40vw" }}
+        /> */}
+
+        {/* ORNAMEN BUNGA KANAN */}
 
         {/* ORNAMEN BUNGA TENGAH */}
         <Image
           // data-aos="fade-in"
-          src="/images/dresscode/Ornament-BungaTengah.svg"
+          src="/images/dresscode/Ornament-BungaTengah.png"
           alt=""
           width={250}
           height={250}
           className="absolute z-30 h-auto"
-          style={{ bottom: "3vw", right: "38.5vw", width: "14vw" }}
+          style={{ bottom: "3vw", right: "38vw", width: "13vw" }}
         />
 
         {/* ORNAMEN GUCI */}
         <Image
-          src="/images/dresscode/Ornament-Guci.svg"
+          src="/images/dresscode/Ornament-Guci.png"
           alt=""
           width={140}
           height={140}

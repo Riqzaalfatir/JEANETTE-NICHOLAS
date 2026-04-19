@@ -7,7 +7,7 @@ const Gallery = () => {
       {/* ===== MOBILE ===== */}
       <div className="relative w-full h-[700px] flex justify-center items-center overflow-hidden lg:hidden">
         <Image
-          src="/images/gallery/Bg-Mobile.svg"
+          src="/images/gallery/BgMobile.jpg"
           alt="background"
           fill
           priority
@@ -22,7 +22,7 @@ const Gallery = () => {
         style={{ aspectRatio: "1512/942" }}
       >
         <Image
-          src="/images/gallery/Bg-Dekstop.svg"
+          src="/images/gallery/BgDekstop.jpg"
           alt="background"
           fill
           priority
