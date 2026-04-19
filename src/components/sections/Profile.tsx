@@ -8,7 +8,7 @@ const Profile = () => {
       {/* ===== MOBILE ===== */}
       <div className="relative w-full mx-auto overflow-hidden flex items-center justify-center aspect-[390/725] lg:hidden">
         <img
-          src="/images/profile/Bg-Profile.png"
+          src="/images/profile/Bg-Profile.K.png"
           alt=""
           className="absolute pointer-events-none z-0"
           style={{
@@ -22,7 +22,7 @@ const Profile = () => {
         />
         <div
           className="relative w-[88%] aspect-[340/630] bg-[#FEFFF9] leading-none overflow-hidden"
-          style={{ boxShadow: "2px 3px 3px 2px rgba(0,0,0,0.50)" }}
+          style={{ boxShadow: "0px 4px 5px 5px rgba(0,0,0,0.40)" }}
         >
           <Image src="/images/profile/Ornament-Emas.svg" alt="frame" fill className="object-fill pointer-events-none z-0" />
           <div className="relative z-10 w-full h-full pt-[15%] pb-[20%] flex flex-col items-center text-center justify-between">
@@ -80,7 +80,7 @@ const Profile = () => {
         {/* Card putih */}
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#FEFFF9] leading-none overflow-hidden"
-          style={{ width: "37.96vw", height: "59.39vw", boxShadow: "2px 3px 3px 2px rgba(0,0,0,0.50)" }}
+          style={{ width: "37.96vw", height: "59.39vw", boxShadow: "0px 4px 5px 5px rgba(0,0,0,0.40)" }}
         >
           <Image src="/images/profile/Ornament-Emas.svg" alt="frame" fill className="object-fill pointer-events-none z-0 scale-x-[1.18]" />
 

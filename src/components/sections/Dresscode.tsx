@@ -19,7 +19,7 @@ const Dresscode = () => {
         <img
           src="/images/dresscode/Ornament-Bg.svg"
           alt=""
-          className="absolute pointer-events-none z-50"
+          className="absolute pointer-events-none  z-50"
           style={{
             top: "50%",
             left: "50%",
@@ -128,7 +128,7 @@ const Dresscode = () => {
           width={200}
           height={200}
           className="absolute z-10 h-auto"
-          style={{ bottom: "5.5vw", left: "29vw", width: "22vw" }}
+          style={{ bottom: "4.9vw", left: "29vw", width: "22vw" }}
         />
 
         {/* ORNAMEN BUNGA KANAN */}
@@ -139,7 +139,7 @@ const Dresscode = () => {
           width={250}
           height={250}
           className="absolute z-40 h-auto"
-          style={{ bottom: "4vw", right: "29vw", width: "22vw" }}
+          style={{ bottom: "3.5vw", right: "29.5vw", width: "22vw" }}
         />
 
         {/* ORNAMEN BUNGA TENGAH */}
@@ -150,7 +150,7 @@ const Dresscode = () => {
           width={250}
           height={250}
           className="absolute z-30 h-auto"
-          style={{ bottom: "3vw", right: "37vw", width: "15vw" }}
+          style={{ bottom: "3vw", right: "38.5vw", width: "14vw" }}
         />
 
         {/* ORNAMEN GUCI */}
@@ -160,7 +160,7 @@ const Dresscode = () => {
           width={140}
           height={140}
           className="absolute left-1/2 -translate-x-1/2 z-0 h-auto"
-          style={{ bottom: "0vw", width: "14vw" }}
+          style={{ bottom: "0.1vw", width: "14vw" }}
         />
 
         {/* CONTENT */}
@@ -186,14 +186,14 @@ const Dresscode = () => {
             <br />
             Peranakan kebaya / Cheongsam / Batik attire
           </p>
-          <div style={{ marginTop: "-1vw" }}>
+          <div style={{ marginTop: "-0.2vw" }}>
             <Image
               src="/images/dresscode/Ornament-Orang.svg"
               alt="dresscode"
               width={210}
               height={210}
               className="object-contain"
-              style={{ width: "16vw", height: "auto" }}
+              style={{ width: "15vw", height: "auto" }}
             />
           </div>
         </div>

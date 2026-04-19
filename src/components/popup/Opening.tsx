@@ -32,7 +32,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }} 
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm  md:backdrop-blur-md flex justify-center items-center  px-4"
+            className="fixed inset-0 z-[100] bg-black/40 backdrop-blur-sm  md:backdrop-blur-md flex justify-center items-center  px-4"
           >
             {/* CARD POPUP */}
             <motion.div
@@ -44,7 +44,7 @@ const Opening = ({ setStart, namaTamu = "Sela" }: OpeningProps) => {
                 ease: "easeOut"
               }}
 
-              className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[430px] md:w-[416px] md:h-[540px] shadow-xl flex flex-col z-50"
+              className="bg-[#F4F1ED] rounded-xl md:rounded-2xl overflow-hidden w-[290px] h-[430px] md:w-[416px] md:h-[540px] shadow-xl flex flex-col z-[100]"
             >
               <div className="relative w-full h-[182px] md:h-[220px] overflow-hidden">
                 <Image

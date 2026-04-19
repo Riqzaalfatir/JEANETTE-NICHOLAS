@@ -33,7 +33,7 @@ useEffect(() => {
 
       <div className="min-h-screen flex flex-col">
         <main className="flex-1">
-          <div style={{ overflow: start ? "auto" : "hidden" }}>
+<div style={{ overflowX: "hidden" }}>
             <Hero />
             <Profile />
             <Waktu />
@@ -41,10 +41,11 @@ useEffect(() => {
             <Rsvp />
             <Gallery />
             <Thankyou />
+                    <Footer />
+
           </div>
         </main>
 
-        <Footer />
       </div>
     </>
   );

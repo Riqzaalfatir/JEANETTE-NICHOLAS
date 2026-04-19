@@ -2,7 +2,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#CD4964] overflow-hidden">
+    <footer className="w-full bg-[#CD4964] "
+>
       {/* ===== MOBILE ===== */}
       <div className="flex lg:hidden items-center justify-center h-[43px]">
         <div className="relative w-[280px] h-[53px]">
@@ -17,10 +18,10 @@ const Footer = () => {
 
       {/* ===== DESKTOP ===== */}
       <div
-        className="hidden lg:flex items-center justify-center"
-        style={{ aspectRatio: "1512/80" }}
+        className="hidden lg:flex items-center justify-center "
+        style={{ aspectRatio: "1512/110"}}
       >
-        <div className="relative" style={{ width: "19vw", height: "6vw" }}>
+        <div className="relative" style={{ width: "20vw", height: "6.2vw" }}>
           <Image
             src="/images/footer/Logo-Footer.svg"
             alt="Logo Provite"
