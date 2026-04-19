@@ -38,22 +38,22 @@ const Rsvp = () => {
 
         {/* Ornamen bunga kanan atas */}
         <Image
-          data-aos="fade-in"
-          src="/images/rsvp/Ornament-BungaAtas.png"
+          // data-aos="fade-in"
+          src="/images/rsvp/BungaDekstopAtas.png"
           alt="flower top"
           width={200}
           height={160}
-          className="absolute top-0 right-0 z-30 w-[56%] h-auto"
+          className="absolute top-0 -right-[21vw] z-30 w-[77%] h-auto"
         />
 
         {/* Ornamen bunga kiri bawah */}
         <Image
-          data-aos="fade-in"
-          src="/images/rsvp/Ornament-BungaBawah.png"
+          // data-aos="fade-in"
+          src="/images/rsvp/BungaDekstopBawah.png"
           alt="flower bottom"
           width={200}
           height={160}
-          className="absolute -bottom-2 left-0 z-30 w-[50%] h-auto"
+          className="absolute -bottom-1 -left-[29vw] z-30 w-[86%] h-auto"
         />
 
         {/* Container putih */}
@@ -89,7 +89,7 @@ const Rsvp = () => {
             Kindly confirm your attendance before <br />
             <span className="font-bold">02 May 2026</span>
           </p>
-          <div className="flex justify-center gap-4 mt-[31px]">
+          <div className="flex justify-center gap-6 mt-[31px]">
             <button
               data-aos="fade-right"
               data-aos-delay="700"
@@ -172,7 +172,7 @@ const Rsvp = () => {
           width={200}
           height={160}
           className="absolute z-30 h-auto"
-          style={{ top: "0", right: "13vw", width: "39vw" }}
+          style={{ top: "1", right: "15vw", width: "36vw" }}
         />
 
         {/* Ornamen bunga kiri bawah — posisi sesuai gambar */}
@@ -208,7 +208,7 @@ const Rsvp = () => {
             data-aos="fade-up"
             data-aos-delay="100"
             className="font-cormorant text-[#CD4964]"
-            style={{ marginTop: "0.4vw", fontSize: "1.32vw" }}
+            style={{ marginTop: "0.7vw", fontSize: "1.32vw" }}
           >
             Dear Mr./Mrs./Ms.
           </p>
@@ -238,7 +238,7 @@ const Rsvp = () => {
 
           <div
             className="flex justify-center"
-            style={{ gap: "0.66vw", marginTop: "3.05vw" }}
+            style={{ gap: "1.5vw", marginTop: "3.05vw" }}
           >
             <button
               data-aos="fade-right"

@@ -62,7 +62,7 @@ const Profile = () => {
               <h1
                 data-aos="fade-in"
                 data-aos-delay="700"
-                className="text-[#FF751F] text-[8vw] font-signature -mt-[16%]"
+                className="text-[#FF751F] text-[8vw] font-signature -mt-[18%]"
               >
                 Jeanette Natasha
               </h1>
@@ -76,7 +76,7 @@ const Profile = () => {
               <p
                 data-aos="fade-up"
                 data-aos-delay="700"
-                className="font-cormorant text-[3.2vw] text-[#7B552B] leading-4 mt-[10%]"
+                className="font-cormorant text-[3.2vw] text-[#7B552B] leading-4 mt-[8%]"
               >
                 Mr. Na Eng Siang and <br /> Mrs. Djuliawati Tan
               </p>
@@ -119,7 +119,7 @@ const Profile = () => {
                 data-aos-delay="1350"
                 className="font-cormorant text-[3.2vw] text-[#7B552B] leading-4"
               >
-                our joy will be completed <br /> with your presence and
+                Our joy will be completed <br /> with your presence and
                 blessings
               </p>
             </div>
@@ -191,7 +191,7 @@ const Profile = () => {
                 className="font-cormorant text-[#7B552B]"
                 style={{
                   fontSize: "1.32vw",
-                  lineHeight: "1.85vw",
+                  lineHeight: "1.8vw",
                   marginTop: "2vw",
                 }}
               >
@@ -310,7 +310,7 @@ const Profile = () => {
                   marginBottom: "1.3vw",
                 }}
               >
-                our joy will be completed <br /> with your presence and
+                Our joy will be completed <br /> with your presence and
                 blessings
               </p>
             </motion.div>

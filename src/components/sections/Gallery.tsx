@@ -7,7 +7,7 @@ const Gallery = () => {
       {/* ===== MOBILE ===== */}
       <div className="relative w-full h-[700px] flex justify-center items-center overflow-hidden lg:hidden">
         <Image
-          src="/images/gallery/BgMobile.jpg"
+          src="/images/gallery/Bg-Mobile.png"
           alt="background"
           fill
           priority

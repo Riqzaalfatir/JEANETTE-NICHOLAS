@@ -22,8 +22,8 @@ const Waktu = () => {
           style={{ height: "30.77vw" }}
         >
           <motion.div
-            className="absolute -left-[2%]"
-            style={{ transformOrigin: "top center", top: "-8vw" }}
+            className="absolute -left-[5%]"
+            style={{ transformOrigin: "top center", top: "-0vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
               duration: 8,
@@ -33,17 +33,17 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/Tes.png"
+              src="/images/waktu/Ornament-Biru.K.webp"
               alt=""
               width={165}
               height={110}
-              style={{ width: "42.31vw", height: "auto" }}
+              style={{ width: "44vw", height: "auto" }}
             />
           </motion.div>
 
           <motion.div
             className="absolute left-[22%]"
-            style={{ transformOrigin: "top center", top: "-15.38vw" }}
+            style={{ transformOrigin: "top center", top: "-0vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
               duration: 6,
@@ -53,17 +53,17 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/TesMerah.png"
+              src="/images/waktu/Ornament-Merah.K.png"
               alt=""
               width={85}
               height={110}
-              style={{ width: "21.79vw", height: "auto" }}
+              style={{ width: "20vw", height: "auto" }}
             />
           </motion.div>
 
           <motion.div
-            className="absolute right-[20%]"
-            style={{ transformOrigin: "top center", top: "-15.38vw" }}
+            className="absolute right-[20.5%]"
+            style={{ transformOrigin: "top center", top: "-0vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
               duration: 6.5,
@@ -73,17 +73,17 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/TesMerah.png"
+              src="/images/waktu/Ornament-Merah.K.png"
               alt=""
               width={85}
               height={110}
-              style={{ width: "21.79vw", height: "auto" }}
+              style={{ width: "20vw", height: "auto" }}
             />
           </motion.div>
 
           <motion.div
-            className="absolute -right-[15%]"
-            style={{ transformOrigin: "top center", top: "-8vw" }}
+            className="absolute -right-[12%]"
+            style={{ transformOrigin: "top center", top: "-0vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
               duration: 8.5,
@@ -93,11 +93,11 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/Tes.png"
+              src="/images/waktu/Ornament-Biru.K.webp"
               alt=""
               width={165}
               height={110}
-              style={{ width: "42.31vw", height: "auto" }}
+              style={{ width: "44vw", height: "auto" }}
             />
           </motion.div>
         </div>
@@ -237,7 +237,7 @@ const Waktu = () => {
 
         {/* ORNAMEN BAWAH */}
         <Image
-          src="/images/waktu/Ornament-GuciDekstop.K.png"
+          src="/images/waktu/Ornament-Guci.K.png"
           alt="guci"
           width={290}
           height={290}
@@ -253,12 +253,12 @@ const Waktu = () => {
           style={{ left: "-3.5%", width: "50vw", height: "auto" }}
         />
         <Image
-          src="/images/waktu/Ornament-BungaKanan.webp"
+          src="/images/waktu/Ornament-BungaKanan.K.webp"
           alt="bunga kanan"
           width={290}
           height={290}
           className="absolute -bottom-0"
-          style={{ right: "0.13vw", width: "50vw", height: "auto" }}
+          style={{ right: "2vw", width: "48vw", height: "auto" }}
         />
         <Image
           src="/images/waktu/Ornament-BungaKanan.Kecil.K.webp"
@@ -290,7 +290,7 @@ const Waktu = () => {
         {/* LAMPU ATAS */}
         <div className="absolute top-0 left-0 w-full z-10">
           <motion.div
-            className="absolute left-[0.5%] -top-[0.5vw]"
+            className="absolute left-[0.5%] -top-[0.2vw]"
             style={{ transformOrigin: "top center" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
@@ -351,7 +351,7 @@ const Waktu = () => {
 
           <motion.div
             className="absolute -right-[3.5%]"
-            style={{ transformOrigin: "top center", top: "-0.5vw" }}
+            style={{ transformOrigin: "top center", top: "-0.2vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
               duration: 8.5,
@@ -387,13 +387,13 @@ const Waktu = () => {
             src="/images/waktu/Ornament-Bg.svg"
             alt="panel"
             fill
-            className="object-contain scale-y-105 scale-x-105"
+            className="object-contain scale-y-110 scale-x-110"
           />
 
           {/* CONTENT */}
           <motion.div
             className="absolute inset-0 flex flex-col items-center text-center leading-none"
-            style={{ paddingTop: "8vw" }}
+            style={{ paddingTop: "7vw" }}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}
@@ -405,7 +405,7 @@ const Waktu = () => {
             {/* DATE */}
             <motion.div
               className="flex items-baseline text-center text-[#CD4964]"
-              style={{ gap: "2.25vw" }}
+              style={{ gap: "2.6vw" }}
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 show: { opacity: 1, y: 0, transition: { duration: 1 } },
@@ -456,11 +456,12 @@ const Waktu = () => {
             >
               <div
                 style={{
-                  width: "1.85vw",
-                  height: "0.13vw",
+                  width: "1.9vw",
+                  height: "0.15vw",
                   backgroundColor: "#CD4964",
                   marginTop: "1vw",
                 }}
+                className=""
               />
               <p
                 className="font-semibold font-cormorant"
@@ -470,8 +471,8 @@ const Waktu = () => {
               </p>
               <div
                 style={{
-                  width: "1.85vw",
-                  height: "0.13vw",
+                  width: "1.9vw",
+                  height: "0.15vw",
                   backgroundColor: "#CD4964",
                   marginTop: "1vw",
                 }}
@@ -527,7 +528,7 @@ const Waktu = () => {
               }
               className="bg-[#FF751F] text-white rounded-full font-bold font-cormorant"
               style={{
-                marginTop: "2.38vw",
+                marginTop: "2.6vw",
                 width: "14.81vw",
                 height: "2.65vw",
                 fontSize: "1.32vw",
@@ -557,7 +558,7 @@ const Waktu = () => {
           width={195}
           height={140}
           className="absolute -bottom-3 -left-19  h-auto"
-          style={{ width: "26vw" }}
+          style={{ width: "27vw" }}
         />
 
         <Image
@@ -565,8 +566,8 @@ const Waktu = () => {
           alt="bunga kanan"
           width={200}
           height={200}
-          className="absolute -bottom-0 right-11 h-auto"
-          style={{ width: "36.07vw" }}
+          className="absolute -bottom-0 right-7 h-auto"
+          style={{ width: "36vw" }}
         />
         <Image
           src="/images/waktu/Ornament-BungaKanan.Kecil.K.webp"

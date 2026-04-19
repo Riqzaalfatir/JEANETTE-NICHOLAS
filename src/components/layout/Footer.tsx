@@ -6,12 +6,12 @@ const Footer = () => {
 >
       {/* ===== MOBILE ===== */}
       <div className="flex lg:hidden items-center justify-center">
-        <div className="relative w-[280px] h-[53px]">
+        <div className="relative w-[280px] h-[58px]">
           <Image
-            src="/images/footer/Logo-Footer.svg"
+            src="/images/footer/LogoProviteMobile.png"
             alt="Logo Provite"
             fill
-            className="object-contain -mt-[2vw]"
+            className="object-contain -mt-[3vw]"
           />
         </div>
       </div>

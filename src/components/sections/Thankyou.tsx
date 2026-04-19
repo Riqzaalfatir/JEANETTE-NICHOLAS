@@ -21,16 +21,16 @@ const Thankyou = () => {
             alt=""
             width={400}
             height={400}
-            className="absolute bottom-[9%] left-[6%] z-10 w-[77%] h-auto"
+            className="absolute bottom-[9%] left-[6%] z-10 w-[78%] h-auto"
           />
 
           {/* ORNAMEN BUNGA KANAN */}
-          <Image data-aos="fade-left"
+          <Image 
             src="/images/thankyou/Ornament-BungaKanan.webp"
             alt=""
             width={250}
             height={250}
-            className="absolute bottom-[7%] right-0 z-10 w-[64%] h-auto"
+            className="absolute bottom-[9.5%] right-2.5  z-10 w-[55%] h-auto"
           />
 
           {/* ORNAMEN BUNGA TENGAH */}
@@ -39,7 +39,7 @@ const Thankyou = () => {
             alt=""
             width={200}
             height={200}
-            className="absolute bottom-[6%] right-[22%] z-10 w-[49%] h-auto"
+            className="absolute bottom-[7.5%] right-[22%] z-10 w-[49%] h-auto"
           />
 
           {/* FRAME */}
@@ -97,7 +97,7 @@ const Thankyou = () => {
             width={400}
             height={400}
             className="absolute z-0 h-auto"
-            style={{ bottom: "2vw", left: "27vw", width: "42vw" }}
+            style={{ bottom: "2vw", left: "26.7vw", width: "43vw" }}
           />
 
           {/* ORNAMEN BUNGA KANAN */}
@@ -108,7 +108,7 @@ const Thankyou = () => {
             width={250}
             height={250}
             className="absolute z-40 h-auto"
-            style={{ bottom: "5vw", right: "29vw", width: "25vw" }}
+            style={{ bottom: "5vw", right: "28.5vw", width: "27.5vw" }}
           />
 
           {/* ORNAMEN BUNGA TENGAH */}
