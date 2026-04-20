@@ -5,7 +5,7 @@ const Gallery = () => {
   return (
     <div id='gallery'>
       {/* ===== MOBILE ===== */}
-      <div className="relative w-full h-[700px] flex justify-center items-center overflow-hidden lg:hidden">
+      <div className="relative w-full h-[700px] md:h-screen flex justify-center items-center overflow-hidden lg:hidden">
         <Image
           src="/images/gallery/Bg-Mobile.webp"
           alt="background"

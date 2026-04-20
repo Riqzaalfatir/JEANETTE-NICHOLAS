@@ -80,7 +80,7 @@ const Dresscode = () => {
           <p
             data-aos="fade-in"
             data-aos-delay="100"
-            className="mt-[7.5%] text-[3.33vw] text-[#CD4964] font-cormorant leading-4"
+            className="mt-[7.5%] text-[3.33vw] text-[#CD4964] font-cormorant leading-4 md:leading-8"
           >
             We would sincerely appreciate
             <br />

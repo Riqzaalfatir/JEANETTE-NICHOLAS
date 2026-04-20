@@ -197,7 +197,7 @@ const Waktu = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="300"
-              className="font-cormorant text-[#CD4964] font-bold leading-4"
+              className="font-cormorant text-[#CD4964] font-bold leading-4 md:leading-8"
               style={{ marginTop: "5.13vw", fontSize: "3.33vw" }}
             >
               Royal Dynasty Restaurant <br /> 2nd Floor

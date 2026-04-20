@@ -48,7 +48,7 @@ const Profile = () => {
               </div>
               <h2
                 data-aos="fade-up"
-                className="font-cormorant text-[3.33vw] text-[#7B552B] leading-4 mt-[9%]"
+                className="font-cormorant text-[3.33vw] text-[#7B552B] leading-4 md:leading-8 mt-[9%]"
               >
                 We are cordially inviting you <br />
                 to be part of our sangjit ceremony
@@ -81,7 +81,7 @@ const Profile = () => {
               <p
                 data-aos="fade-up"
                 data-aos-delay="700"
-                className="font-cormorant text-[3.2vw] text-[#7B552B] leading-4 mt-[8%]"
+                className="font-cormorant text-[3.2vw] text-[#7B552B] leading-4 md:leading-8 mt-[8%]"
               >
                 Mr. Na Eng Siang and <br /> Mrs. Djuliawati Tan
               </p>
@@ -113,7 +113,7 @@ const Profile = () => {
               <p
                 data-aos="fade-up"
                 data-aos-delay="1350"
-                className="font-cormorant text-[3.2vw] text-[#7B552B] leading-4 mt-[7%]"
+                className="font-cormorant text-[3.2vw] text-[#7B552B] leading-4 md:leading-8 mt-[7%]"
               >
                 Mr. Chua Sui Hian and <br /> Mrs. Go Lie Lien
               </p>
@@ -122,7 +122,7 @@ const Profile = () => {
               <p
                 data-aos="fade-up"
                 data-aos-delay="1350"
-                className="font-cormorant text-[3.2vw] text-[#7B552B] leading-4"
+                className="font-cormorant text-[3.2vw] text-[#7B552B] leading-4 md:leading-8"
               >
                 Our joy will be completed <br /> with your presence and
                 blessings

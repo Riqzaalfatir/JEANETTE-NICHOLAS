@@ -30,17 +30,18 @@ const Hero = () => {
             alt="ornament"
             width={85}
             height={110}
+            className="w-[85px] h-[110px] md:w-[120px] md:h-[150px]"
           />
         </motion.div>
 
         <div className="absolute inset-0 flex flex-col justify-end items-center pb-[28%] text-center z-10">
-          <p data-aos="fade-up" className="text-white font-cormorant font-semibold text-[16px]">
+          <p data-aos="fade-up" className="text-white font-cormorant font-semibold text-[16px] md:text-[30px]">
             The Sangjit of
           </p>
-          <motion.h1 data-aos="fade-up" data-aos-delay="100" className="text-white font-david text-[28px]">
+          <motion.h1 data-aos="fade-up" data-aos-delay="100" className="text-white font-david text-[28px] md:text-[56px]">
             JEANETTE & NICHOLAS
           </motion.h1>
-          <p data-aos="fade-up" data-aos-delay="300" className="text-white font-cormorant font-bold text-[13px]">
+          <p data-aos="fade-up" data-aos-delay="300" className="text-white font-cormorant font-bold text-[13px] md:text-[25px]">
             SATURDAY, 16 MAY 2026
           </p>
         </div>
