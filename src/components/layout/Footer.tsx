@@ -9,7 +9,7 @@ const Footer = () => {
 <div className="flex lg:hidden items-center justify-center overflow-hidden" style={{ height: "9vw" }}>
   <div className="relative w-[75vw]" style={{ height: "13vw", marginTop: "-6.5vw", marginBottom: "-2.5vw" }}>
     <Image
-      src="/images/footer/LogoProviteMobile.png"
+      src="/images/footer/Logo-Footer.svg"
       alt="Logo Provite"
       fill
       className="object-contain"

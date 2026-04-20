@@ -17,7 +17,7 @@ const Dresscode = () => {
 
         {/* FRAME BG */}
         <img
-          src="/images/dresscode/Ornament-BgMobile.K.webp"
+          src="/images/dresscode/FrameMobile.webp"
           alt=""
           className="absolute pointer-events-none  z-50"
           style={{
