@@ -132,7 +132,7 @@ const Dresscode = () => {
           height={200}
           sizes="(min-width: 1024px) 26vw, 0px"
           className="absolute z-10 h-auto"
-          style={{ bottom: "6vw", left: "24.7vw", width: "26vw" }}
+          style={{ bottom: "5.5vw", left: "24.7vw", width: "26.5vw" }}
         />
 
         {/* ORNAMEN BUNGA KANAN */}
@@ -159,13 +159,13 @@ const Dresscode = () => {
 
         {/* ORNAMEN GUCI */}
         <Image
-          src="/images/dresscode/Guci.K.png"
+          src="/images/dresscode/Guci.svg"
           alt=""
           width={140}
           height={140}
           sizes="(min-width: 1024px) 15vw, 0px"
           className="absolute left-1/2 -translate-x-1/2 z-0 h-auto"
-          style={{ bottom: "0vw", width: "15vw" }}
+          style={{ bottom: "-0.5vw", width: "15vw" }}
         />
 
         {/* CONTENT */}

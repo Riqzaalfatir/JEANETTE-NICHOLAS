@@ -321,7 +321,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/LampuMerah.webp"
+              src="/images/waktu/LampuMerah.svg"
               alt=""
               width={85}
               height={110}
@@ -341,7 +341,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/LampuMerah.webp"
+              src="/images/waktu/LampuMerah.svg"
               alt=""
               width={85}
               height={110}
@@ -545,7 +545,7 @@ const Waktu = () => {
 
         {/* ORNAMEN BAWAH */}
         <Image
-          src="/images/waktu/Ornament-Guci.K.png"
+          src="/images/waktu/Guci.svg"
           alt="guci"
           width={120}
           height={120}
