@@ -35,7 +35,7 @@ const Thankyou = () => {
 
           {/* ORNAMEN BUNGA TENGAH */}
           <Image data-aos="fade-in"
-            src="/images/thankyou/BungaTengah.webp"
+            src="/images/thankyou/BungaKanan.webp"
             alt=""
             width={200}
             height={200}
