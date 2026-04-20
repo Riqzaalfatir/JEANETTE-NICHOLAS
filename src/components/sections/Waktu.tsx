@@ -280,7 +280,7 @@ const Waktu = () => {
       >
         {/* BACKGROUND */}
         <Image
-          src="/images/waktu/Bg-Dekstop.K.webp"
+          src="/images/waktu/BgDekstop.webp"
           alt="bg"
           fill
           priority
