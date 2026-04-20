@@ -16,6 +16,8 @@ import Opening from "@/components/popup/Opening";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [start, setStart] = useState(false);
+  const [open, setOpen] = useState(false)
+
 
 useEffect(() => {
   AOS.init({
@@ -32,7 +34,7 @@ useEffect(() => {
 
     <div className="min-h-screen flex flex-col">
       <div style={{ overflowX: "hidden" }}>
-        <Hero />
+        <Hero open={menuOpen}/>
         <Profile />
         <Waktu />
         <Dresscode />

@@ -2,7 +2,11 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const Hero = () => {
+type HeroProps = {
+  open: boolean
+}
+
+const Hero = ({ open }: HeroProps) => {
   return (
     <div id="hero">
       {/* ===== MOBILE ===== */}
@@ -18,11 +22,19 @@ const Hero = () => {
           priority
         />
 
+        {/* left-[53.5vw] */}
         <motion.div
-          className="absolute top-[7%] left-1/2 -translate-x-1/2 z-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="absolute top-[7%] z-10"
+  initial={{ opacity: 0, left: "50%", x: "-50%" }}
+  animate={{
+    opacity: 1,
+    left: open ? "53.5vw" : "50%",
+    x: "-50%",
+  }}
+  transition={{
+    duration: 0.8,
+    ease: "easeInOut",
+  }}
         >
           <Image
             src="/images/hero/Ornament-Hero.svg"

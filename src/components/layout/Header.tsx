@@ -14,11 +14,9 @@ const Header = ({ open, setOpen }: HeaderProps) => {
   const linkMenu = [
     { name: "HOME", link: "#hero" },
     { name: "PROFILE", link: "#profile" },
-    { name: "COUNTING DOWN", link: "#waktu" },
-    { name: "OUR STORY", link: "#dresscode" },
+    { name: "DATE & LOCATION", link: "#waktu" },
+    { name: "DRESSCODE", link: "#dresscode" },
     { name: "RSVP", link: "#rsvp" },
-    { name: "GALLERY", link: "#gallery" },
-    { name: "WEDDING GIFT", link: "#thankyou" }
   ]
 
   const container = {
@@ -140,7 +138,7 @@ const Header = ({ open, setOpen }: HeaderProps) => {
                 duration: 0.6,
                 ease: "easeOut"
               }}
-              className="pt-[20px] text-black ml-9 md:ml-4 text-[8px] md:text-[12px] font-sans font-light"
+              className="pt-[61px] text-black ml-9 md:ml-4 text-[8px] md:text-[12px] font-sans font-light pb-3"
             >
               Select a section above to continue
             </motion.p>
