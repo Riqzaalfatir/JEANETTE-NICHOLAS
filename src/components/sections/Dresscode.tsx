@@ -19,7 +19,7 @@ const Dresscode = () => {
         <img
           src="/images/dresscode/FrameMobile.webp"
           alt=""
-          className="absolute pointer-events-none  z-50"
+          className="absolute pointer-events-none  z-40"
           style={{
             top: "50%",
             left: "50%",
@@ -36,7 +36,7 @@ const Dresscode = () => {
           alt=""
           width={200}
           height={200}
-          className="absolute bottom-[10.5%] -left-11 z-20 w-[65%] h-auto"
+          className="absolute bottom-[10.5%] -left-11 z-10 w-[65%] h-auto"
         />
 
         {/* ORNAMEN BUNGA KANAN */}
@@ -46,7 +46,7 @@ const Dresscode = () => {
           alt=""
           width={250}
           height={250}
-          className="absolute bottom-[8%] -right-[26%] z-40 w-[80%] h-auto"
+          className="absolute bottom-[8%] -right-[26%] z-30 w-[80%] h-auto"
         />
 
         {/* ORNAMEN BUNGA TENGAH */}
@@ -56,7 +56,7 @@ const Dresscode = () => {
           alt=""
           width={250}
           height={250}
-          className="absolute bottom-[5%] right-[21%] z-30 w-[38%] h-auto"
+          className="absolute bottom-[5%] right-[21%] z-20 w-[38%] h-auto"
         />
 
         {/* ORNAMEN GUCI */}
@@ -65,7 +65,7 @@ const Dresscode = () => {
           alt=""
           width={140}
           height={140}
-          className="absolute bottom-[2%] left-1/2 -translate-x-1/2 z-10 w-[36%] h-auto"
+          className="absolute bottom-[2%] left-1/2 -translate-x-1/2 z-0 w-[36%] h-auto"
         />
 
         {/* CONTENT */}
