@@ -26,10 +26,16 @@ useEffect(() => {
   });
 }, []);
 
+ const handleStart = () => {
+    setStart(true);
+    setTimeout(() => AOS.refresh(), 100);
+  };
+
+
   return (
   <>
     <Header open={menuOpen} setOpen={setMenuOpen} />
-    {!start && <Opening setStart={setStart} />}
+      {!start && <Opening setStart={handleStart} />}  {/* ← ganti setStart ke handleStart */}
 
     <div className="min-h-screen flex flex-col">
       <div style={{ overflowX: "hidden" }}>

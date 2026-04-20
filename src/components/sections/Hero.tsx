@@ -65,22 +65,23 @@ const Hero = () => {
         >
           <p
             data-aos="fade-up"
+            data-aos-delay="10"
             className="text-white font-cormorant font-semibold [text-shadow:1px_1px_2.9px_#000000]"
             style={{ fontSize: "1.59vw", marginBottom: "0.99vw" }}
           >
             The Sangjit of
           </p>
-          <motion.h1
+          <h1
             data-aos="fade-up"
             data-aos-delay="100"
             className="text-white font-david"
             style={{ fontSize: "4.23vw", marginBottom: "1.32vw" }}
           >
             JEANETTE & NICHOLAS
-          </motion.h1>
+          </h1>
           <p
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="200"
             className="text-white font-cormorant font-bold"
             style={{ fontSize: "1.59vw" }}
           >
