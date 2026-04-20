@@ -18,7 +18,7 @@ const Rsvp = () => {
   const [openPopup, setOpenPopup] = useState(false);
 
   return (
-    <>
+    <div id="rsvp">
       {/* ===== MOBILE ===== */}
       <div className="relative w-full overflow-hidden lg:hidden">
         {/* BG */}
@@ -76,14 +76,14 @@ const Rsvp = () => {
           </p>
           <p
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="200"
             className="mt-[25px] font-cormorant text-[13px] font-bold text-[#CD4964]"
           >
             .............
           </p>
           <p
             data-aos="fade-up"
-            data-aos-delay="500"
+            data-aos-delay="300"
             className="mt-[34px] font-cormorant text-[13px] text-[#CD4964]"
           >
             Kindly confirm your attendance before <br />
@@ -92,7 +92,7 @@ const Rsvp = () => {
           <div className="flex justify-center gap-6 mt-[31px]">
             <button
               data-aos="fade-right"
-              data-aos-delay="700"
+              data-aos-delay="400"
               onClick={() => {
                 setStatus("attend");
                 setOpenPopup(true);
@@ -103,7 +103,7 @@ const Rsvp = () => {
             </button>
             <button
               data-aos="fade-left"
-              data-aos-delay="700"
+              data-aos-delay="400"
               onClick={() => setStatus("not")}
               className={`font-cormorant font-semibold text-[13px] w-[90px] h-[30px] rounded-full uppercase ${status === "not" ? "bg-[#F9732A] text-[#FEFBF0]" : "border-[#F9732A] border-[0.5px] text-[#FF751F] bg-transparent"}`}
             >
@@ -112,28 +112,28 @@ const Rsvp = () => {
           </div>
           <p
             data-aos="fade-in"
-            data-aos-delay="1100"
+            data-aos-delay="500"
             className="mt-[43px] font-cormorant text-[13px] text-[#CD4964]"
           >
             ARE YOU SURE?
           </p>
           <button
             data-aos="fade-up"
-            data-aos-delay="1100"
+            data-aos-delay="600"
             className="mt-[43px] font-cormorant text-[13px] bg-[#F9732A] text-[#FEFBF0] font-semibold w-[200px] h-[30px] rounded-full"
           >
             CONFIRM NOT ATTEND
           </button>
           <p
             data-aos="fade-up"
-            data-aos-delay="1500"
+            data-aos-delay="700"
             className="mt-[43px] font-cormorant text-[13px] text-[#CD4964]"
           >
             Having trouble with RSVP?
           </p>
           <button
             data-aos="fade-up"
-            data-aos-delay="1500"
+            data-aos-delay="800"
             onClick={waHelpdesk}
             className="mt-[22px] mx-auto font-cormorant text-[13px] bg-[#F9732A] text-[#FEFBF0] font-semibold w-[200px] h-[30px] rounded-full flex items-center justify-center gap-1"
           >
@@ -166,7 +166,7 @@ const Rsvp = () => {
 
         {/* Ornamen bunga kanan atas — posisi sesuai gambar, tidak di pojok */}
         <Image
-          data-aos="fade-in"
+          // data-aos="fade-in"
           src="/images/rsvp/BungaDekstopAtas.png"
           alt="flower top"
           width={200}
@@ -177,7 +177,7 @@ const Rsvp = () => {
 
         {/* Ornamen bunga kiri bawah — posisi sesuai gambar */}
         <Image
-          data-aos="fade-in"
+          // data-aos="fade-in"
           src="/images/rsvp/BungaDekstopBawah.png"
           alt="flower bottom"
           width={200}
@@ -215,7 +215,7 @@ const Rsvp = () => {
 
           <p
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="200"
             className="font-cormorant font-bold text-[#CD4964]"
             style={{ marginTop: "1.65vw", fontSize: "1.32vw" }}
           >
@@ -224,7 +224,7 @@ const Rsvp = () => {
 
           <p
             data-aos="fade-up"
-            data-aos-delay="500"
+            data-aos-delay="300"
             className="font-cormorant text-[#CD4964]"
             style={{
               marginTop: "2vw",
@@ -242,7 +242,7 @@ const Rsvp = () => {
           >
             <button
               data-aos="fade-right"
-              data-aos-delay="700"
+              data-aos-delay="400"
               onClick={() => {
                 setStatus("attend");
                 setOpenPopup(true);
@@ -254,7 +254,7 @@ const Rsvp = () => {
             </button>
             <button
               data-aos="fade-left"
-              data-aos-delay="700"
+              data-aos-delay="400"
               onClick={() => setStatus("not")}
               className={`font-cormorant font-semibold rounded-full uppercase ${status === "not" ? "bg-[#F9732A] text-[#FEFBF0]" : "border-[#F9732A] border-[0.5px] text-[#FF751F] bg-transparent"}`}
               style={{ fontSize: "1.32vw", width: "10.12vw", height: "2.65vw" }}
@@ -265,7 +265,7 @@ const Rsvp = () => {
 
           <p
             data-aos="fade-in"
-            data-aos-delay="1100"
+            data-aos-delay="500"
             className="font-cormorant text-[#CD4964]"
             style={{ marginTop: "3.84vw", fontSize: "1.32vw" }}
           >
@@ -274,7 +274,7 @@ const Rsvp = () => {
 
           <button
             data-aos="fade-up"
-            data-aos-delay="1100"
+            data-aos-delay="600"
             className="font-cormorant bg-[#F9732A] text-[#FEFBF0] font-semibold rounded-full"
             style={{
               marginTop: "3.84vw",
@@ -288,7 +288,7 @@ const Rsvp = () => {
 
           <p
             data-aos="fade-up"
-            data-aos-delay="1500"
+            data-aos-delay="700"
             className="font-cormorant text-[#CD4964]"
             style={{ marginTop: "2.84vw", fontSize: "1.32vw" }}
           >
@@ -297,7 +297,7 @@ const Rsvp = () => {
 
           <button
             data-aos="fade-up"
-            data-aos-delay="1500"
+            data-aos-delay="800"
             onClick={waHelpdesk}
             className="mx-auto font-cormorant bg-[#F9732A] text-[#FEFBF0] font-semibold rounded-full flex items-center justify-center"
             style={{
@@ -326,7 +326,7 @@ const Rsvp = () => {
           <Attend setOpenPopup={setOpenPopup} waHelpdesk={waHelpdesk} />
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 };
 

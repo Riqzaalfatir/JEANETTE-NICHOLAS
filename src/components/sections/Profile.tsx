@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Profile = () => {
   return (
-    <>
+    <div id="profile">
       {/* ===== MOBILE ===== */}
       <div className="relative w-full mx-auto overflow-hidden flex items-center justify-center aspect-[390/725] lg:hidden">
         <img
@@ -167,7 +167,7 @@ const Profile = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={{
               hidden: {},
-              show: { transition: { staggerChildren: 0.25 } },
+              show: { transition: { staggerChildren: 0.3 } },
             }}
           >
             {/* Logo + h2 */}
@@ -317,7 +317,7 @@ const Profile = () => {
           </motion.div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

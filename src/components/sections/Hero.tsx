@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <>
+    <div id="hero">
       {/* ===== MOBILE ===== */}
       <div
         className="relative w-full overflow-hidden lg:hidden"
@@ -87,7 +87,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

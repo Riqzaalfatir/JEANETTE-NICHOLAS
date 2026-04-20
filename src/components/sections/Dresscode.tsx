@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Dresscode = () => {
   return (
-    <>
+    <div id="dresscode">
       {/* ===== MOBILE ===== */}
       <div
         className="relative w-full overflow-hidden lg:hidden"
@@ -89,7 +89,9 @@ const Dresscode = () => {
           </p>
           <div className="-mt-[1%]">
             <Image
-              src="/images/dresscode/Ornament-Orang.svg"
+            data-aos="fade-in"
+            data-aos-delay="150"
+              src="/images/dresscode/Orang.png"
               alt="dresscode"
               width={210}
               height={210}
@@ -187,7 +189,9 @@ const Dresscode = () => {
           </p>
           <div style={{ marginTop: "-0.3vw" }}>
             <Image
-              src="/images/dresscode/Ornament-Orang.svg"
+              data-aos="fade-in"
+              data-aos-delay="150"
+              src="/images/dresscode/Orang.png"
               alt="dresscode"
               width={210}
               height={210}
@@ -197,7 +201,7 @@ const Dresscode = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

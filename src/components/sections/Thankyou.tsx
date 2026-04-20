@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Thankyou = () => {
   return (
-    <>
+    <div id="thankyou">
       {/* ===== MOBILE ===== */}
       <div
         className="relative z-10 lg:hidden"
@@ -25,7 +25,7 @@ const Thankyou = () => {
           />
 
           {/* ORNAMEN BUNGA KANAN */}
-          <Image 
+          <Image data-aos="fade-left"
             src="/images/thankyou/Ornament-BungaKanan.webp"
             alt=""
             width={250}
@@ -146,7 +146,7 @@ const Thankyou = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

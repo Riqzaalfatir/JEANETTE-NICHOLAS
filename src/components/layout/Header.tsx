@@ -13,12 +13,12 @@ const Header = ({ open, setOpen }: HeaderProps) => {
 
   const linkMenu = [
     { name: "HOME", link: "#hero" },
-    { name: "PROFILE", link: "#counting" },
-    { name: "COUNTING DOWN", link: "#orderofevents" },
-    { name: "OUR STORY", link: "#venue" },
+    { name: "PROFILE", link: "#profile" },
+    { name: "COUNTING DOWN", link: "#waktu" },
+    { name: "OUR STORY", link: "#dresscode" },
     { name: "RSVP", link: "#rsvp" },
-    { name: "GALLERY", link: "#rsvp" },
-    { name: "WEDDING GIFT", link: "#gift" }
+    { name: "GALLERY", link: "#gallery" },
+    { name: "WEDDING GIFT", link: "#thankyou" }
   ]
 
   const container = {

@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 const Gallery = () => {
   return (
-    <>
+    <div id='gallery'>
       {/* ===== MOBILE ===== */}
       <div className="relative w-full h-[700px] flex justify-center items-center overflow-hidden lg:hidden">
         <Image
-          src="/images/gallery/Bg-Mobile.png"
+          src="/images/gallery/Bg-Mobile.webp"
           alt="background"
           fill
           priority
@@ -29,7 +29,7 @@ const Gallery = () => {
           className="object-cover"
         />
       </div>
-    </>
+    </div>
   )
 }
 

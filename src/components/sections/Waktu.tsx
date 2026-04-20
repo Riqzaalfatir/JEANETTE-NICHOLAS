@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Waktu = () => {
   return (
-    <>
+    <div id="waktu">
       {/* ===== MOBILE ===== */}
       <div className="relative w-full aspect-[390/641] mx-auto overflow-hidden flex items-center justify-center lg:hidden">
         {/* BACKGROUND */}
@@ -578,7 +578,7 @@ const Waktu = () => {
           style={{ width: "14vw" }}
         />
       </div>
-    </>
+    </div>
   );
 };
 
