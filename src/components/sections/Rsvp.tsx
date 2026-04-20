@@ -38,21 +38,21 @@ const Rsvp = () => {
 
         {/* Ornamen bunga kanan atas */}
         <Image
-          // data-aos="fade-in"
           src="/images/rsvp/BungaAtas..png"
           alt="flower top"
           width={200}
           height={160}
+          sizes="(max-width: 1023px) 77vw, 0px"
           className="absolute top-0 -right-[21vw] z-30 w-[77%] h-auto"
         />
 
         {/* Ornamen bunga kiri bawah */}
         <Image
-          // data-aos="fade-in"
           src="/images/rsvp/BungaBawah.png"
           alt="flower bottom"
           width={200}
           height={160}
+          sizes="(max-width: 1023px) 86vw, 0px"
           className="absolute -bottom-1 -left-[29vw] z-30 w-[86%] h-auto"
         />
 
@@ -142,6 +142,7 @@ const Rsvp = () => {
               alt="wa"
               width={18}
               height={23}
+              sizes="(max-width: 1023px) 20px, 0px"
               className="w-[20px] object-contain"
             />
             CHAT HELPDESK TEAM
@@ -158,39 +159,39 @@ const Rsvp = () => {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: "url('/images/rsvp/Bg-Rsvp.K.png')",
+            backgroundImage: "url('/images/profile/Bg-Dekstop.svg')",
             backgroundRepeat: "repeat",
-            backgroundSize: "54.22vw",
+            backgroundSize: "99.22vw",
           }}
         />
 
-        {/* Ornamen bunga kanan atas — posisi sesuai gambar, tidak di pojok */}
+        {/* Ornamen bunga kanan atas */}
         <Image
-          // data-aos="fade-in"
-          src="/images/rsvp/BungaAtas..png"
+          src="/images/dresscode/BungaAtas.svg"
           alt="flower top"
           width={200}
           height={160}
+          sizes="(min-width: 1024px) 36vw, 0px"
           className="absolute z-30 h-auto"
           style={{ top: "1", right: "15vw", width: "36vw" }}
         />
 
-        {/* Ornamen bunga kiri bawah — posisi sesuai gambar */}
+        {/* Ornamen bunga kiri bawah */}
         <Image
-          // data-aos="fade-in"
-          src="/images/rsvp/BungaBawah.png"
+          src="/images/dresscode/BungaKiri.svg"
           alt="flower bottom"
           width={200}
           height={160}
+          sizes="(min-width: 1024px) 39vw, 0px"
           className="absolute z-30 h-auto"
-          style={{ bottom: "-1vw", left: "12vw", width: "41vw" }}
+          style={{ bottom: "-2vw", left: "13vw", width: "39vw" }}
         />
 
         {/* Card putih */}
         <div
           className="absolute left-1/2 -translate-x-1/2 bg-[#FEFFF9] text-center z-20"
           style={{
-            boxShadow: "0px 4px 5px 5px rgba(0,0,0,0.40)",
+            boxShadow: "0px 5.04px 12.97px 2.52px rgba(0,0,0,0.72)",
             width: "38.23vw",
             height: "71.56vw",
             top: "3.24vw",
@@ -203,7 +204,6 @@ const Rsvp = () => {
           >
             RSVP
           </h2>
-
           <p
             data-aos="fade-up"
             data-aos-delay="100"
@@ -212,7 +212,6 @@ const Rsvp = () => {
           >
             Dear Mr./Mrs./Ms.
           </p>
-
           <p
             data-aos="fade-up"
             data-aos-delay="200"
@@ -221,32 +220,20 @@ const Rsvp = () => {
           >
             .............
           </p>
-
           <p
             data-aos="fade-up"
             data-aos-delay="300"
             className="font-cormorant text-[#CD4964]"
-            style={{
-              marginTop: "2vw",
-              fontSize: "1.32vw",
-              lineHeight: "1.85vw",
-            }}
+            style={{ marginTop: "2vw", fontSize: "1.32vw", lineHeight: "1.85vw" }}
           >
             Kindly confirm your attendance before <br />
             <span className="font-bold">02 May 2026</span>
           </p>
-
-          <div
-            className="flex justify-center"
-            style={{ gap: "1.5vw", marginTop: "3.05vw" }}
-          >
+          <div className="flex justify-center" style={{ gap: "1.5vw", marginTop: "3.05vw" }}>
             <button
               data-aos="fade-right"
               data-aos-delay="400"
-              onClick={() => {
-                setStatus("attend");
-                setOpenPopup(true);
-              }}
+              onClick={() => { setStatus("attend"); setOpenPopup(true); }}
               className={`font-cormorant font-semibold rounded-full uppercase ${status === "attend" ? "bg-[#F9732A] text-[#FEFBF0]" : "border-[#F9732A] border-[0.5px] text-[#FF751F] bg-transparent"}`}
               style={{ fontSize: "1.32vw", width: "10.12vw", height: "2.65vw" }}
             >
@@ -262,7 +249,6 @@ const Rsvp = () => {
               NOT ATTEND
             </button>
           </div>
-
           <p
             data-aos="fade-in"
             data-aos-delay="500"
@@ -271,21 +257,14 @@ const Rsvp = () => {
           >
             ARE YOU SURE?
           </p>
-
           <button
             data-aos="fade-up"
             data-aos-delay="600"
             className="font-cormorant bg-[#F9732A] text-[#FEFBF0] font-semibold rounded-full"
-            style={{
-              marginTop: "3.84vw",
-              fontSize: "1.32vw",
-              width: "21.83vw",
-              height: "2.65vw",
-            }}
+            style={{ marginTop: "3.84vw", fontSize: "1.32vw", width: "21.83vw", height: "2.65vw" }}
           >
             CONFIRM NOT ATTEND
           </button>
-
           <p
             data-aos="fade-up"
             data-aos-delay="700"
@@ -294,25 +273,19 @@ const Rsvp = () => {
           >
             Having trouble with RSVP?
           </p>
-
           <button
             data-aos="fade-up"
             data-aos-delay="800"
             onClick={waHelpdesk}
             className="mx-auto font-cormorant bg-[#F9732A] text-[#FEFBF0] font-semibold rounded-full flex items-center justify-center"
-            style={{
-              marginTop: "2vw",
-              fontSize: "1.32vw",
-              width: "21.83vw",
-              height: "2.65vw",
-              gap: "0.4vw",
-            }}
+            style={{ marginTop: "2vw", fontSize: "1.32vw", width: "21.83vw", height: "2.65vw", gap: "0.4vw" }}
           >
             <Image
               src="/images/rsvp/lonceng.svg"
               alt="wa"
               width={18}
               height={23}
+              sizes="(min-width: 1024px) 1.7vw, 0px"
               style={{ width: "1.7vw", height: "auto" }}
             />
             CHAT HELPDESK TEAM

@@ -275,12 +275,12 @@ const Waktu = () => {
         className="relative hidden lg:block w-full overflow-hidden z-10"
         style={{
           aspectRatio: "1512/945",
-          boxShadow: "4px 1px 17px 0px rgba(0,0,0,0.85)",
+          boxShadow: "0px 4.44px 11.44px 0px rgba(0,0,0,0.73)",
         }}
       >
         {/* BACKGROUND */}
         <Image
-          src="/images/waktu/BgDekstop.webp"
+          src="/images/waktu/Bg-Waktu.webp"
           alt="bg"
           fill
           priority
@@ -290,7 +290,7 @@ const Waktu = () => {
         {/* LAMPU ATAS */}
         <div className="absolute top-0 left-0 w-full z-10">
           <motion.div
-            className="absolute left-[0.5%] -top-[0.2vw]"
+            className="absolute -left-[3.5%] -top-[0.2vw]"
             style={{ transformOrigin: "top center" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
@@ -301,7 +301,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/LampuBiru.webp"
+              src="/images/waktu/LampuBDekstop.svg"
               alt=""
               width={155}
               height={110}
@@ -350,7 +350,7 @@ const Waktu = () => {
           </motion.div>
 
           <motion.div
-            className="absolute -right-[3.5%]"
+            className="absolute right-[0%]"
             style={{ transformOrigin: "top center", top: "-0.2vw" }}
             animate={{ rotate: [-1.5, 1.5, -1.5] }}
             transition={{
@@ -361,7 +361,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/LampuBiru.webp"
+              src="/images/waktu/LampuBDekstop.svg"
               alt=""
               width={155}
               height={110}
@@ -553,7 +553,7 @@ const Waktu = () => {
           style={{ width: "19.53vw" }}
         />
         <Image
-          src="/images/waktu/BungaKiri..webp"
+          src="/images/waktu/BungaKiri.svg"
           alt="bunga kiri"
           width={195}
           height={140}
@@ -562,7 +562,7 @@ const Waktu = () => {
         />
 
         <Image
-          src="/images/waktu/BungaKanan.webp"
+          src="/images/waktu/BungaKanan.svg"
           alt="bunga kanan"
           width={200}
           height={200}
@@ -570,7 +570,7 @@ const Waktu = () => {
           style={{ width: "36vw" }}
         />
         <Image
-          src="/images/waktu/Ornament-BungaKanan.Kecil.K.webp"
+          src="/images/waktu/BungaKecil.svg"
           alt="bunga kanan"
           width={100}
           height={100}

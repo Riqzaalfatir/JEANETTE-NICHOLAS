@@ -31,31 +31,31 @@ const Dresscode = () => {
 
         {/* ORNAMEN BUNGA KIRI */}
         <Image
-          // data-aos="fade-right"
           src="/images/dresscode/BungaKiri.webp"
           alt=""
           width={200}
           height={200}
+          sizes="(max-width: 1023px) 65vw, 0px"
           className="absolute bottom-[10.5%] -left-11 z-10 w-[65%] h-auto"
         />
 
         {/* ORNAMEN BUNGA KANAN */}
         <Image
-          // data-aos="fade-left"
-          src="/images/dresscode/BungaKanan..webp"
+          src="/images/dresscode/BungaKanan.svg"
           alt=""
           width={250}
           height={250}
-          className="absolute bottom-[8%] -right-[26%] z-30 w-[80%] h-auto"
+          sizes="(max-width: 1023px) 80vw, 0px"
+          className="absolute bottom-[8%] -right-[27%] z-30 w-[78%] h-auto"
         />
 
         {/* ORNAMEN BUNGA TENGAH */}
         <Image
-          // data-aos="fade-in"
           src="/images/dresscode/BungaTengah.webp"
           alt=""
           width={250}
           height={250}
+          sizes="(max-width: 1023px) 38vw, 0px"
           className="absolute bottom-[5%] right-[21%] z-20 w-[38%] h-auto"
         />
 
@@ -65,6 +65,7 @@ const Dresscode = () => {
           alt=""
           width={140}
           height={140}
+          sizes="(max-width: 1023px) 36vw, 0px"
           className="absolute bottom-[2%] left-1/2 -translate-x-1/2 z-0 w-[36%] h-auto"
         />
 
@@ -89,12 +90,13 @@ const Dresscode = () => {
           </p>
           <div className="-mt-[1%]">
             <Image
-            data-aos="fade-in"
-            data-aos-delay="150"
+              data-aos="fade-in"
+              data-aos-delay="150"
               src="/images/dresscode/Orang..png"
               alt="dresscode"
               width={210}
               height={210}
+              sizes="(max-width: 1023px) 41vw, 0px"
               className="object-contain w-[41vw]"
             />
           </div>
@@ -102,7 +104,6 @@ const Dresscode = () => {
       </div>
 
       {/* ===== DESKTOP ===== */}
-    {/* ===== DESKTOP ===== */}
       <div
         className="relative hidden lg:block w-full overflow-hidden"
         style={{
@@ -114,42 +115,44 @@ const Dresscode = () => {
         <div className="absolute inset-0 bg-[#F8F0CC] z-0" />
 
         {/* FRAME BG DESKTOP */}
-        <img
+        <Image
           src="/images/dresscode/Ornament-BgDekstop.webp"
           alt=""
+          fill
+          sizes="(min-width: 1024px) 100vw, 0px"
           className="absolute inset-0 w-full h-full pointer-events-none z-50 scale-x-100 scale-y-105"
           style={{ objectFit: "fill" }}
         />
 
         {/* ORNAMEN BUNGA KIRI */}
-      {/* ORNAMEN BUNGA KIRI */}
         <Image
-          // data-aos="fade-right"
-          src="/images/dresscode/BungaKiri.webp"
+          src="/images/dresscode/BungaKiri.svg"
           alt=""
           width={200}
           height={200}
+          sizes="(min-width: 1024px) 26vw, 0px"
           className="absolute z-10 h-auto"
           style={{ bottom: "6vw", left: "24.7vw", width: "26vw" }}
         />
+
+        {/* ORNAMEN BUNGA KANAN */}
         <Image
-          // data-aos="fade-left"
-          src="/images/dresscode/BungaKanan..webp"
+          src="/images/dresscode/BungaKanan.svg"
           alt=""
           width={250}
           height={250}
+          sizes="(min-width: 1024px) 30vw, 0px"
           className="absolute z-40 h-auto"
           style={{ bottom: "4.5vw", right: "20vw", width: "30vw" }}
         />
-        
 
         {/* ORNAMEN BUNGA TENGAH */}
         <Image
-          // data-aos="fade-in"
           src="/images/dresscode/BungaTengah.webp"
           alt=""
           width={250}
           height={250}
+          sizes="(min-width: 1024px) 14vw, 0px"
           className="absolute z-30 h-auto"
           style={{ bottom: "3vw", right: "37.5vw", width: "14vw" }}
         />
@@ -160,12 +163,14 @@ const Dresscode = () => {
           alt=""
           width={140}
           height={140}
+          sizes="(min-width: 1024px) 15vw, 0px"
           className="absolute left-1/2 -translate-x-1/2 z-0 h-auto"
           style={{ bottom: "0vw", width: "15vw" }}
         />
 
         {/* CONTENT */}
-        <div className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center"
+        <div
+          className="absolute inset-0 z-30 flex flex-col items-center justify-center text-center"
           style={{ marginTop: "-5vw" }}
         >
           <h2
@@ -195,6 +200,7 @@ const Dresscode = () => {
               alt="dresscode"
               width={210}
               height={210}
+              sizes="(min-width: 1024px) 14.5vw, 0px"
               className="object-contain"
               style={{ width: "14.5vw", height: "auto" }}
             />

@@ -7,7 +7,9 @@ const Profile = () => {
     <div id="profile">
       {/* ===== MOBILE ===== */}
       <div className="relative w-full mx-auto overflow-hidden flex items-center justify-center aspect-[390/725] lg:hidden">
-        <img
+
+        {/* GANTI <img> ke <Image> + sizes */}
+         <img
           src="/images/profile/Bg-Profile.K.png"
           alt=""
           className="absolute pointer-events-none z-0"
@@ -20,6 +22,7 @@ const Profile = () => {
             objectPosition: "left top",
           }}
         />
+
         <div
           className="relative w-[88%] aspect-[340/630] bg-[#FEFFF9] leading-none overflow-hidden"
           style={{ boxShadow: "0px 4px 5px 5px rgba(0,0,0,0.40)" }}
@@ -28,6 +31,7 @@ const Profile = () => {
             src="/images/profile/Ornament-Emas.svg"
             alt="frame"
             fill
+            sizes="(max-width: 1023px) 88vw, 0px"
             className="object-fill pointer-events-none z-0"
           />
           <div className="relative z-10 w-full h-full pt-[15%] pb-[20%] flex flex-col items-center text-center justify-between">
@@ -38,6 +42,7 @@ const Profile = () => {
                   alt="ornament"
                   width={48}
                   height={110}
+                  sizes="(max-width: 1023px) 25vw, 0px"
                   className="w-full h-auto"
                 />
               </div>
@@ -132,13 +137,13 @@ const Profile = () => {
         className="relative hidden lg:block w-full overflow-hidden"
         style={{ aspectRatio: "1512/1052" }}
       >
-        {/* BG */}
+        {/* BG — ini pakai backgroundImage CSS, bukan <Image>, jadi aman — tidak didownload di mobile */}
         <div
           className="absolute inset-0 object-center"
           style={{
-            backgroundImage: "url('/images/profile/Bg-Profile.jpg')",
+            backgroundImage: "url('/images/profile/Bg-Dekstop.svg')",
             backgroundRepeat: "repeat",
-            backgroundSize: "54.22vw",
+            backgroundSize: "99vw",
           }}
         />
 
@@ -148,17 +153,17 @@ const Profile = () => {
           style={{
             width: "37.96vw",
             height: "59.39vw",
-            boxShadow: "0px 4px 5px 5px rgba(0,0,0,0.40)",
+            boxShadow: "0px 5.04px 12.97px 2.52px rgba(0,0,0,0.72)",
           }}
         >
           <Image
             src="/images/profile/Ornament-Emas.svg"
             alt="frame"
             fill
+            sizes="(min-width: 1024px) 38vw, 0px"
             className="object-fill pointer-events-none z-0 scale-x-[1.18]"
           />
 
-          {/* Wrapper utama pakai motion — trigger saat card masuk viewport */}
           <motion.div
             className="relative z-10 w-full h-full flex flex-col items-center text-center justify-between"
             style={{ paddingTop: "5.09vw", paddingBottom: "5.09vw" }}
@@ -170,7 +175,6 @@ const Profile = () => {
               show: { transition: { staggerChildren: 0.3 } },
             }}
           >
-            {/* Logo + h2 */}
             <motion.div
               className="flex flex-col items-center"
               variants={{
@@ -184,23 +188,20 @@ const Profile = () => {
                   alt="ornament"
                   width={43}
                   height={100}
+                  sizes="(min-width: 1024px) 3.5vw, 0px"
                   className="w-full h-auto"
                 />
               </div>
               <h2
                 className="font-cormorant text-[#7B552B]"
-                style={{
-                  fontSize: "1.32vw",
-                  lineHeight: "1.8vw",
-                  marginTop: "2vw",
-                }}
+                style={{ fontSize: "1.32vw", lineHeight: "1.8vw", marginTop: "2vw" }}
               >
                 We are cordially inviting you <br />
                 to be part of our sangjit ceremony
               </h2>
             </motion.div>
 
-            {/* Together with our families */}
+            {/* sisa konten tidak berubah sama sekali... */}
             <motion.div
               className="flex flex-col items-center"
               variants={{
@@ -208,15 +209,11 @@ const Profile = () => {
                 show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
             >
-              <p
-                className="font-cormorant font-bold text-[#7B552B] -mt-[0.5vw]"
-                style={{ fontSize: "1.32vw" }}
-              >
+              <p className="font-cormorant font-bold text-[#7B552B] -mt-[0.5vw]" style={{ fontSize: "1.32vw" }}>
                 Together with our families
               </p>
             </motion.div>
 
-            {/* Jeanette */}
             <motion.div
               className="flex flex-col items-center"
               variants={{
@@ -224,46 +221,28 @@ const Profile = () => {
                 show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
             >
-              <h1
-                className="text-[#FF751F] font-signature"
-                style={{ fontSize: "2.78vw" }}
-              >
+              <h1 className="text-[#FF751F] font-signature" style={{ fontSize: "2.78vw" }}>
                 Jeanette Natasha
               </h1>
-              <p
-                className="font-cormorant font-bold text-[#7B552B]"
-                style={{ fontSize: "1.32vw", marginTop: "1.12vw" }}
-              >
+              <p className="font-cormorant font-bold text-[#7B552B]" style={{ fontSize: "1.32vw", marginTop: "1.12vw" }}>
                 The Daughter of
               </p>
-              <p
-                className="font-cormorant text-[#7B552B]"
-                style={{
-                  fontSize: "1.4vw",
-                  lineHeight: "1.7vw",
-                  marginTop: "0.99vw",
-                }}
-              >
+              <p className="font-cormorant text-[#7B552B]" style={{ fontSize: "1.4vw", lineHeight: "1.7vw", marginTop: "0.99vw" }}>
                 Mr. Na Eng Siang and <br /> Mrs. Djuliawati Tan
               </p>
             </motion.div>
 
-            {/* and */}
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
             >
-              <p
-                className="font-cormorant font-bold italic text-[#7B552B]"
-                style={{ fontSize: "1.32vw" }}
-              >
+              <p className="font-cormorant font-bold italic text-[#7B552B]" style={{ fontSize: "1.32vw" }}>
                 and
               </p>
             </motion.div>
 
-            {/* Nicholas */}
             <motion.div
               className="flex flex-col items-center"
               variants={{
@@ -271,47 +250,25 @@ const Profile = () => {
                 show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
             >
-              <h1
-                className="text-[#FF751F] font-signature"
-                style={{ fontSize: "2.78vw" }}
-              >
+              <h1 className="text-[#FF751F] font-signature" style={{ fontSize: "2.78vw" }}>
                 Nicholas Chua
               </h1>
-              <p
-                className="font-cormorant font-bold text-[#7B552B]"
-                style={{ fontSize: "1.32vw", marginTop: "1.72vw" }}
-              >
+              <p className="font-cormorant font-bold text-[#7B552B]" style={{ fontSize: "1.32vw", marginTop: "1.72vw" }}>
                 The Son of
               </p>
-              <p
-                className="font-cormorant text-[#7B552B]"
-                style={{
-                  fontSize: "1.4vw",
-                  lineHeight: "1.7vw",
-                  marginTop: "0.99vw",
-                }}
-              >
+              <p className="font-cormorant text-[#7B552B]" style={{ fontSize: "1.4vw", lineHeight: "1.7vw", marginTop: "0.99vw" }}>
                 Mr. Chua Sui Hian and <br /> Mrs. Go Lie Lien
               </p>
             </motion.div>
 
-            {/* Closing */}
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
             >
-              <p
-                className="font-cormorant text-[#7B552B]"
-                style={{
-                  fontSize: "1.32vw",
-                  lineHeight: "1.85vw",
-                  marginBottom: "1.3vw",
-                }}
-              >
-                Our joy will be completed <br /> with your presence and
-                blessings
+              <p className="font-cormorant text-[#7B552B]" style={{ fontSize: "1.32vw", lineHeight: "1.85vw", marginBottom: "1.3vw" }}>
+                Our joy will be completed <br /> with your presence and blessings
               </p>
             </motion.div>
           </motion.div>

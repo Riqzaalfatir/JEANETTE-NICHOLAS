@@ -5,9 +5,7 @@ const Thankyou = () => {
   return (
     <div id="thankyou">
       {/* ===== MOBILE ===== */}
-      <div
-        className="relative z-10 lg:hidden"
-      >
+      <div className="relative z-10 lg:hidden">
         <div
           className="relative w-full overflow-hidden"
           style={{ aspectRatio: "390/680" }}
@@ -21,6 +19,7 @@ const Thankyou = () => {
             alt=""
             width={400}
             height={400}
+            sizes="(max-width: 1023px) 78vw, 0px"
             className="absolute bottom-[9%] left-[6%] z-10 w-[78%] h-auto"
           />
 
@@ -30,7 +29,8 @@ const Thankyou = () => {
             alt=""
             width={250}
             height={250}
-            className="absolute bottom-[9.5%] right-2.5  z-10 w-[55%] h-auto"
+            sizes="(max-width: 1023px) 55vw, 0px"
+            className="absolute bottom-[9.5%] right-2.5 z-10 w-[55%] h-auto"
           />
 
           {/* ORNAMEN BUNGA TENGAH */}
@@ -39,11 +39,12 @@ const Thankyou = () => {
             alt=""
             width={200}
             height={200}
+            sizes="(max-width: 1023px) 49vw, 0px"
             className="absolute bottom-[7.5%] right-[22%] z-10 w-[49%] h-auto"
           />
 
           {/* FRAME */}
-          <img
+            <img
             src="/images/thankyou/Bg-Thankyou.png"
             alt=""
             className="absolute pointer-events-none z-20"
@@ -55,6 +56,8 @@ const Thankyou = () => {
               height: "107%",
             }}
           />
+
+
 
           {/* CONTENT */}
           <div className="absolute inset-0 z-30 flex flex-col items-center text-center px-8">
@@ -71,7 +74,7 @@ const Thankyou = () => {
 
       {/* ===== DESKTOP ===== */}
       <div
-        className="relative z-10 hidden lg:block "
+        className="relative z-10 hidden lg:block"
         style={{ boxShadow: "4px 1px 17px 0px rgba(0,0,0,0.85)" }}
       >
         <div
@@ -82,44 +85,46 @@ const Thankyou = () => {
           <div className="absolute inset-0 bg-[#F8F0CC] z-0" />
 
           {/* FRAME BG DESKTOP */}
-          <img
+          <Image
             src="/images/thankyou/Bg-Dekstop.svg"
             alt=""
+            fill
+            sizes="(min-width: 1024px) 100vw, 0px"
             className="absolute inset-0 w-full h-full pointer-events-none z-50 scale-x-105 scale-y-[1.04]"
             style={{ objectFit: "fill" }}
           />
 
           {/* ORNAMEN BUNGA KIRI */}
-          <Image
-            data-aos="fade-right"
+          <Image data-aos="fade-right"
             src="/images/thankyou/Ornament-BungaKiri.webp"
             alt=""
             width={400}
             height={400}
+            sizes="(min-width: 1024px) 43vw, 0px"
             className="absolute z-0 h-auto"
             style={{ bottom: "2vw", left: "26.7vw", width: "43vw" }}
           />
 
           {/* ORNAMEN BUNGA KANAN */}
-          <Image
-            data-aos="fade-left"
-            src="/images/thankyou/BungaTengah.webp"
+          <Image data-aos="fade-left"
+            src="/images/thankyou/BungaKanan.svg"
             alt=""
             width={250}
             height={250}
+            sizes="(min-width: 1024px) 27.5vw, 0px"
             className="absolute z-40 h-auto"
-            style={{ bottom: "4vw", right: "28.5vw", width: "27.5vw" }}
+            style={{ bottom: "2vw", right: "28vw", width: "30vw" }}
           />
 
           {/* ORNAMEN BUNGA TENGAH */}
-          <Image
-            data-aos="fade-in"
-            src="/images/thankyou/BungaKanan.webp"
+          <Image data-aos="fade-in"
+            src="/images/thankyou/BungaTengah.svg"
             alt=""
             width={200}
             height={200}
+            sizes="(min-width: 1024px) 27vw, 0px"
             className="absolute z-40 h-auto"
-            style={{ bottom: "0.3vw", right: "36vw", width: "27vw" }}
+            style={{ bottom: "0.3vw", right: "36.8vw", width: "27vw" }}
           />
 
           {/* CONTENT */}
@@ -150,4 +155,4 @@ const Thankyou = () => {
   );
 };
 
-export default Thankyou;
+export default Thankyou;  
