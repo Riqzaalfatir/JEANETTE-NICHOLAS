@@ -35,7 +35,7 @@ const Thankyou = () => {
 
           {/* ORNAMEN BUNGA TENGAH */}
           <Image data-aos="fade-in"
-            src="/images/thankyou/Ornament-BungaTengah.png"
+            src="/images/thankyou/BungaTengah.webp"
             alt=""
             width={200}
             height={200}
@@ -103,23 +103,23 @@ const Thankyou = () => {
           {/* ORNAMEN BUNGA KANAN */}
           <Image
             data-aos="fade-left"
-            src="/images/thankyou/Ornament-BungaKanan.webp"
+            src="/images/thankyou/BungaTengah.webp"
             alt=""
             width={250}
             height={250}
             className="absolute z-40 h-auto"
-            style={{ bottom: "5vw", right: "28.5vw", width: "27.5vw" }}
+            style={{ bottom: "4vw", right: "28.5vw", width: "27.5vw" }}
           />
 
           {/* ORNAMEN BUNGA TENGAH */}
           <Image
             data-aos="fade-in"
-            src="/images/thankyou/Ornament-BungaTengah.png"
+            src="/images/thankyou/BungaKanan.webp"
             alt=""
             width={200}
             height={200}
             className="absolute z-40 h-auto"
-            style={{ bottom: "0.5vw", right: "36vw", width: "26vw" }}
+            style={{ bottom: "0.3vw", right: "36vw", width: "27vw" }}
           />
 
           {/* CONTENT */}

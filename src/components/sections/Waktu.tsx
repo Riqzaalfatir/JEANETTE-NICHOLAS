@@ -33,7 +33,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/Ornament-Biru.K.webp"
+              src="/images/waktu/LampuBiru.webp"
               alt=""
               width={165}
               height={110}
@@ -53,7 +53,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/Ornament-Merah.K.png"
+              src="/images/waktu/LampuMerah.webp"
               alt=""
               width={85}
               height={110}
@@ -73,7 +73,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/Ornament-Merah.K.png"
+              src="/images/waktu/LampuMerah.webp"
               alt=""
               width={85}
               height={110}
@@ -93,7 +93,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/Ornament-Biru.K.webp"
+              src="/images/waktu/LampuBiru.webp"
               alt=""
               width={165}
               height={110}
@@ -245,7 +245,7 @@ const Waktu = () => {
           style={{ right: "-6vw", width: "36.2vw", height: "auto" }}
         />
         <Image
-          src="/images/waktu/Ornament-BungaKiri.K.webp"
+          src="/images/waktu/BungaKiri..webp"
           alt="bunga kiri"
           width={290}
           height={290}
@@ -253,7 +253,7 @@ const Waktu = () => {
           style={{ left: "-3.5%", width: "50vw", height: "auto" }}
         />
         <Image
-          src="/images/waktu/Ornament-BungaKanan.K.webp"
+          src="/images/waktu/BungaKanan.webp"
           alt="bunga kanan"
           width={290}
           height={290}
@@ -261,7 +261,7 @@ const Waktu = () => {
           style={{ right: "2vw", width: "48vw", height: "auto" }}
         />
         <Image
-          src="/images/waktu/Ornament-BungaKanan.Kecil.K.webp"
+          src="/images/waktu/BungaKananKecil.webp"
           alt="bunga kanan"
           width={110}
           height={110}
@@ -301,7 +301,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/Ornament-Biru.K.webp"
+              src="/images/waktu/LampuBiru.webp"
               alt=""
               width={155}
               height={110}
@@ -321,7 +321,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/Ornament-Merah.K.png"
+              src="/images/waktu/LampuMerah.webp"
               alt=""
               width={85}
               height={110}
@@ -341,7 +341,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/Ornament-Merah.K.png"
+              src="/images/waktu/LampuMerah.webp"
               alt=""
               width={85}
               height={110}
@@ -361,7 +361,7 @@ const Waktu = () => {
             }}
           >
             <Image
-              src="/images/waktu/Ornament-Biru.K.webp"
+              src="/images/waktu/LampuBiru.webp"
               alt=""
               width={155}
               height={110}
@@ -553,7 +553,7 @@ const Waktu = () => {
           style={{ width: "19.53vw" }}
         />
         <Image
-          src="/images/waktu/Ornament-BungaKiri.K.webp"
+          src="/images/waktu/BungaKiri..webp"
           alt="bunga kiri"
           width={195}
           height={140}
@@ -562,7 +562,7 @@ const Waktu = () => {
         />
 
         <Image
-          src="/images/waktu/Ornament-BungaKanan.K.webp"
+          src="/images/waktu/BungaKanan.webp"
           alt="bunga kanan"
           width={200}
           height={200}

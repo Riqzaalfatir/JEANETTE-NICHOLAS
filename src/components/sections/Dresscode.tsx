@@ -32,7 +32,7 @@ const Dresscode = () => {
         {/* ORNAMEN BUNGA KIRI */}
         <Image
           // data-aos="fade-right"
-          src="/images/dresscode/BungaKiri.K.webp"
+          src="/images/dresscode/BungaKiri.webp"
           alt=""
           width={200}
           height={200}
@@ -42,7 +42,7 @@ const Dresscode = () => {
         {/* ORNAMEN BUNGA KANAN */}
         <Image
           // data-aos="fade-left"
-          src="/images/dresscode/BungaKanan.webp"
+          src="/images/dresscode/BungaKanan..webp"
           alt=""
           width={250}
           height={250}
@@ -52,7 +52,7 @@ const Dresscode = () => {
         {/* ORNAMEN BUNGA TENGAH */}
         <Image
           // data-aos="fade-in"
-          src="/images/dresscode/BungaTengah.K.webp"
+          src="/images/dresscode/BungaTengah.webp"
           alt=""
           width={250}
           height={250}
@@ -91,7 +91,7 @@ const Dresscode = () => {
             <Image
             data-aos="fade-in"
             data-aos-delay="150"
-              src="/images/dresscode/Orang.png"
+              src="/images/dresscode/Orang..png"
               alt="dresscode"
               width={210}
               height={210}
@@ -125,16 +125,16 @@ const Dresscode = () => {
       {/* ORNAMEN BUNGA KIRI */}
         <Image
           // data-aos="fade-right"
-          src="/images/dresscode/BungaKiri.K.webp"
+          src="/images/dresscode/BungaKiri.webp"
           alt=""
           width={200}
           height={200}
           className="absolute z-10 h-auto"
-          style={{ bottom: "5.5vw", left: "24.7vw", width: "26vw" }}
+          style={{ bottom: "6vw", left: "24.7vw", width: "26vw" }}
         />
         <Image
           // data-aos="fade-left"
-          src="/images/dresscode/BungaKanan.webp"
+          src="/images/dresscode/BungaKanan..webp"
           alt=""
           width={250}
           height={250}
@@ -146,7 +146,7 @@ const Dresscode = () => {
         {/* ORNAMEN BUNGA TENGAH */}
         <Image
           // data-aos="fade-in"
-          src="/images/dresscode/BungaTengah.K.webp"
+          src="/images/dresscode/BungaTengah.webp"
           alt=""
           width={250}
           height={250}
@@ -161,7 +161,7 @@ const Dresscode = () => {
           width={140}
           height={140}
           className="absolute left-1/2 -translate-x-1/2 z-0 h-auto"
-          style={{ bottom: "0.8vw", width: "14vw" }}
+          style={{ bottom: "0vw", width: "15vw" }}
         />
 
         {/* CONTENT */}
@@ -191,7 +191,7 @@ const Dresscode = () => {
             <Image
               data-aos="fade-in"
               data-aos-delay="150"
-              src="/images/dresscode/Orang.png"
+              src="/images/dresscode/Orang..png"
               alt="dresscode"
               width={210}
               height={210}

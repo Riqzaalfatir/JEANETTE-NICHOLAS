@@ -39,7 +39,7 @@ const Rsvp = () => {
         {/* Ornamen bunga kanan atas */}
         <Image
           // data-aos="fade-in"
-          src="/images/rsvp/BungaDekstopAtas.png"
+          src="/images/rsvp/BungaAtas..png"
           alt="flower top"
           width={200}
           height={160}
@@ -49,7 +49,7 @@ const Rsvp = () => {
         {/* Ornamen bunga kiri bawah */}
         <Image
           // data-aos="fade-in"
-          src="/images/rsvp/BungaDekstopBawah.png"
+          src="/images/rsvp/BungaBawah.png"
           alt="flower bottom"
           width={200}
           height={160}
@@ -167,7 +167,7 @@ const Rsvp = () => {
         {/* Ornamen bunga kanan atas — posisi sesuai gambar, tidak di pojok */}
         <Image
           // data-aos="fade-in"
-          src="/images/rsvp/BungaDekstopAtas.png"
+          src="/images/rsvp/BungaAtas..png"
           alt="flower top"
           width={200}
           height={160}
@@ -178,7 +178,7 @@ const Rsvp = () => {
         {/* Ornamen bunga kiri bawah — posisi sesuai gambar */}
         <Image
           // data-aos="fade-in"
-          src="/images/rsvp/BungaDekstopBawah.png"
+          src="/images/rsvp/BungaBawah.png"
           alt="flower bottom"
           width={200}
           height={160}
