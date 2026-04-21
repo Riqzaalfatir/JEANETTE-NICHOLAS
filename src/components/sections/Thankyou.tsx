@@ -14,7 +14,8 @@ const Thankyou = () => {
           <div className="absolute inset-0 bg-[#F8F0CC] z-0" />
 
           {/* ORNAMEN BUNGA KIRI */}
-          <Image data-aos="fade-right"
+          <Image
+            data-aos="fade-right"
             src="/images/thankyou/Ornament-BungaKiri.webp"
             alt=""
             width={400}
@@ -24,7 +25,8 @@ const Thankyou = () => {
           />
 
           {/* ORNAMEN BUNGA KANAN */}
-          <Image data-aos="fade-left"
+          <Image
+            data-aos="fade-left"
             src="/images/thankyou/Ornament-BungaKanan.webp"
             alt=""
             width={250}
@@ -34,7 +36,8 @@ const Thankyou = () => {
           />
 
           {/* ORNAMEN BUNGA TENGAH */}
-          <Image data-aos="fade-in"
+          <Image
+            data-aos="fade-in"
             src="/images/thankyou/BungaKanan.webp"
             alt=""
             width={200}
@@ -44,7 +47,7 @@ const Thankyou = () => {
           />
 
           {/* FRAME */}
-            <img
+          <img
             src="/images/thankyou/Bg-Thankyou.png"
             alt=""
             className="absolute pointer-events-none z-20"
@@ -57,14 +60,19 @@ const Thankyou = () => {
             }}
           />
 
-
-
           {/* CONTENT */}
           <div className="absolute inset-0 z-30 flex flex-col items-center text-center px-8">
-            <h2 data-aos="fade-in" className="text-[6.2vw] font-david font-bold text-[#CD4964] mt-[63vw] uppercase">
+            <h2
+              data-aos="fade-in"
+              className="text-[6.2vw] font-david font-bold text-[#CD4964] mt-[63vw] uppercase"
+            >
               Thank you
             </h2>
-            <p data-aos="fade-up" data-aos-delay="100" className="mt-[4vw] text-[3.3vw] text-[#CD4964] font-cormorant">
+            <p
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="mt-[4vw] text-[3.3vw] text-[#CD4964] font-cormorant"
+            >
               It would be a joy and honor for us <br />
               to have you join our celebration and share <br /> your blessings.
             </p>
@@ -95,7 +103,8 @@ const Thankyou = () => {
           />
 
           {/* ORNAMEN BUNGA KIRI */}
-          <Image data-aos="fade-right"
+          <Image
+            data-aos="fade-right"
             src="/images/thankyou/Ornament-BungaKiri.webp"
             alt=""
             width={400}
@@ -106,7 +115,8 @@ const Thankyou = () => {
           />
 
           {/* ORNAMEN BUNGA KANAN */}
-          <Image data-aos="fade-left"
+          <Image
+            data-aos="fade-left"
             src="/images/thankyou/BungaKanan.svg"
             alt=""
             width={250}
@@ -117,14 +127,15 @@ const Thankyou = () => {
           />
 
           {/* ORNAMEN BUNGA TENGAH */}
-          <Image data-aos="fade-in"
+          <Image
+            data-aos="fade-in"
             src="/images/thankyou/BungaTengah.svg"
             alt=""
             width={200}
             height={200}
             sizes="(min-width: 1024px) 27vw, 0px"
             className="absolute z-40 h-auto"
-            style={{ bottom: "0.3vw", right: "36.8vw", width: "27vw" }}
+            style={{ bottom: "0.8vw", right: "36.8vw", width: "25vw" }}
           />
 
           {/* CONTENT */}
@@ -143,7 +154,11 @@ const Thankyou = () => {
               data-aos="fade-up"
               data-aos-delay="100"
               className="text-[#CD4964] font-cormorant"
-              style={{ fontSize: "1.32vw", marginTop: "1.3vw", lineHeight: "1.7vw" }}
+              style={{
+                fontSize: "1.32vw",
+                marginTop: "1.3vw",
+                lineHeight: "1.7vw",
+              }}
             >
               It would be a joy and honor for us <br />
               to have you join our celebration and share <br /> your blessings.
@@ -155,4 +170,4 @@ const Thankyou = () => {
   );
 };
 
-export default Thankyou;  
+export default Thankyou;

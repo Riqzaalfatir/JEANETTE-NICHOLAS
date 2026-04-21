@@ -7,9 +7,7 @@ const Profile = () => {
     <div id="profile">
       {/* ===== MOBILE ===== */}
       <div className="relative w-full mx-auto overflow-hidden flex items-center justify-center aspect-[390/725] lg:hidden">
-
-        {/* GANTI <img> ke <Image> + sizes */}
-         <img
+        <img
           src="/images/profile/Bg-Profile.K.png"
           alt=""
           className="absolute pointer-events-none z-0"
@@ -137,7 +135,6 @@ const Profile = () => {
         className="relative hidden lg:block w-full overflow-hidden"
         style={{ aspectRatio: "1512/1052" }}
       >
-        {/* BG — ini pakai backgroundImage CSS, bukan <Image>, jadi aman — tidak didownload di mobile */}
         <div
           className="absolute inset-0 object-center"
           style={{
@@ -194,14 +191,17 @@ const Profile = () => {
               </div>
               <h2
                 className="font-cormorant text-[#7B552B]"
-                style={{ fontSize: "1.32vw", lineHeight: "1.8vw", marginTop: "2vw" }}
+                style={{
+                  fontSize: "1.32vw",
+                  lineHeight: "1.8vw",
+                  marginTop: "2vw",
+                }}
               >
                 We are cordially inviting you <br />
                 to be part of our sangjit ceremony
               </h2>
             </motion.div>
 
-            {/* sisa konten tidak berubah sama sekali... */}
             <motion.div
               className="flex flex-col items-center"
               variants={{
@@ -209,7 +209,10 @@ const Profile = () => {
                 show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
             >
-              <p className="font-cormorant font-bold text-[#7B552B] -mt-[0.5vw]" style={{ fontSize: "1.32vw" }}>
+              <p
+                className="font-cormorant font-bold text-[#7B552B] -mt-[0.5vw]"
+                style={{ fontSize: "1.32vw" }}
+              >
                 Together with our families
               </p>
             </motion.div>
@@ -221,13 +224,26 @@ const Profile = () => {
                 show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
             >
-              <h1 className="text-[#FF751F] font-signature" style={{ fontSize: "2.78vw" }}>
+              <h1
+                className="text-[#FF751F] font-signature"
+                style={{ fontSize: "2.78vw" }}
+              >
                 Jeanette Natasha
               </h1>
-              <p className="font-cormorant font-bold text-[#7B552B]" style={{ fontSize: "1.32vw", marginTop: "1.12vw" }}>
+              <p
+                className="font-cormorant font-bold text-[#7B552B]"
+                style={{ fontSize: "1.32vw", marginTop: "1.12vw" }}
+              >
                 The Daughter of
               </p>
-              <p className="font-cormorant text-[#7B552B]" style={{ fontSize: "1.4vw", lineHeight: "1.7vw", marginTop: "0.99vw" }}>
+              <p
+                className="font-cormorant text-[#7B552B]"
+                style={{
+                  fontSize: "1.4vw",
+                  lineHeight: "1.7vw",
+                  marginTop: "0.99vw",
+                }}
+              >
                 Mr. Na Eng Siang and <br /> Mrs. Djuliawati Tan
               </p>
             </motion.div>
@@ -238,7 +254,10 @@ const Profile = () => {
                 show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
             >
-              <p className="font-cormorant font-bold italic text-[#7B552B]" style={{ fontSize: "1.32vw" }}>
+              <p
+                className="font-cormorant font-bold italic text-[#7B552B]"
+                style={{ fontSize: "1.32vw" }}
+              >
                 and
               </p>
             </motion.div>
@@ -250,13 +269,26 @@ const Profile = () => {
                 show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
             >
-              <h1 className="text-[#FF751F] font-signature" style={{ fontSize: "2.78vw" }}>
+              <h1
+                className="text-[#FF751F] font-signature"
+                style={{ fontSize: "2.78vw" }}
+              >
                 Nicholas Chua
               </h1>
-              <p className="font-cormorant font-bold text-[#7B552B]" style={{ fontSize: "1.32vw", marginTop: "1.72vw" }}>
+              <p
+                className="font-cormorant font-bold text-[#7B552B]"
+                style={{ fontSize: "1.32vw", marginTop: "1.72vw" }}
+              >
                 The Son of
               </p>
-              <p className="font-cormorant text-[#7B552B]" style={{ fontSize: "1.4vw", lineHeight: "1.7vw", marginTop: "0.99vw" }}>
+              <p
+                className="font-cormorant text-[#7B552B]"
+                style={{
+                  fontSize: "1.4vw",
+                  lineHeight: "1.7vw",
+                  marginTop: "0.99vw",
+                }}
+              >
                 Mr. Chua Sui Hian and <br /> Mrs. Go Lie Lien
               </p>
             </motion.div>
@@ -267,8 +299,16 @@ const Profile = () => {
                 show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
               }}
             >
-              <p className="font-cormorant text-[#7B552B]" style={{ fontSize: "1.32vw", lineHeight: "1.85vw", marginBottom: "1.3vw" }}>
-                Our joy will be completed <br /> with your presence and blessings
+              <p
+                className="font-cormorant text-[#7B552B]"
+                style={{
+                  fontSize: "1.32vw",
+                  lineHeight: "1.85vw",
+                  marginBottom: "1.3vw",
+                }}
+              >
+                Our joy will be completed <br /> with your presence and
+                blessings
               </p>
             </motion.div>
           </motion.div>

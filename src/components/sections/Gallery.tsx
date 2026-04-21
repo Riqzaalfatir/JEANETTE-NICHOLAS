@@ -1,9 +1,9 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <div id='gallery'>
+    <div id="gallery">
       {/* ===== MOBILE ===== */}
       <div className="relative w-full h-[700px] md:h-screen flex justify-center items-center overflow-hidden lg:hidden">
         <Image
@@ -13,7 +13,6 @@ const Gallery = () => {
           priority
           className="object-cover object-top"
         />
-
       </div>
 
       {/* ===== DESKTOP ===== */}
@@ -30,7 +29,7 @@ const Gallery = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;

@@ -35,7 +35,7 @@ useEffect(() => {
   return (
   <>
     <Header open={menuOpen} setOpen={setMenuOpen} />
-      {!start && <Opening setStart={handleStart} />}  {/* ← ganti setStart ke handleStart */}
+      {!start && <Opening setStart={handleStart} />}  
 
     <div className="min-h-screen flex flex-col">
       <div style={{ overflowX: "hidden" }}>

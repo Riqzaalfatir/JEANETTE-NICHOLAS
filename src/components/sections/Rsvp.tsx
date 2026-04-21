@@ -43,7 +43,7 @@ const Rsvp = () => {
           width={200}
           height={160}
           sizes="(max-width: 1023px) 77vw, 0px"
-          className="absolute top-0 -right-[21vw] z-30 w-[77%]  md:w-[55%]  h-auto"
+          className="absolute top-0 -right-[20vw] z-30 w-[77%]  md:w-[55%]  h-auto"
         />
 
         {/* Ornamen bunga kiri bawah */}
@@ -53,101 +53,101 @@ const Rsvp = () => {
           width={200}
           height={160}
           sizes="(max-width: 1023px) 86vw, 0px"
-          className="absolute -bottom-1 -left-[29vw] z-30 w-[86%]  md:w-[45%] md:-left-[10vw] h-auto"
+          className="absolute -bottom-1 -left-[29.5vw] z-30 w-[86%]  md:w-[45%] md:-left-[10vw] h-auto"
         />
 
         {/* Container putih */}
-       <div
-    className="relative z-20 bg-[#FEFFF9] mx-[25px] md:mx-[80px] mt-[48px] md:mt-[64px] text-center pb-[40%] md:pb-[20%]"
-    style={{ boxShadow: "0px 4px 5px 5px rgba(0,0,0,0.40)" }}
-  >
-    <h2
-      data-aos="fade-in"
-      className="font-david pt-[67px] md:pt-[80px] font-bold text-[24px] md:text-[36px] text-[#CD4964]"
-    >
-      RSVP
-    </h2>
-    <p
-      data-aos="fade-up"
-      data-aos-delay="100"
-      className="mt-[35px] md:mt-[45px] font-cormorant text-[13px] md:text-[18px] text-[#CD4964]"
-    >
-      Dear Mr./Mrs./Ms.
-    </p>
-    <p
-      data-aos="fade-up"
-      data-aos-delay="200"
-      className="mt-[25px] font-cormorant text-[13px] md:text-[18px] font-bold text-[#CD4964]"
-    >
-      .............
-    </p>
-    <p
-      data-aos="fade-up"
-      data-aos-delay="300"
-      className="mt-[34px] font-cormorant text-[13px] md:text-[18px] text-[#CD4964]"
-    >
-      Kindly confirm your attendance before <br />
-      <span className="font-bold">02 May 2026</span>
-    </p>
-    <div className="flex justify-center gap-6 md:gap-4 mt-[31px] md:mt-[40px]">
-      <button
-        data-aos="fade-right"
-        data-aos-delay="400"
-        onClick={() => {
-          setStatus("attend");
-          setOpenPopup(true);
-        }}
-        className={`font-cormorant font-semibold text-[13px] md:text-[17px] w-[90px] md:w-[120px] h-[30px] md:h-[40px] rounded-full uppercase ${status === "attend" ? "bg-[#F9732A] text-[#FEFBF0]" : "border-[#F9732A] border-[0.5px] text-[#FF751F] bg-transparent"}`}
-      >
-        ATTEND
-      </button>
-      <button
-        data-aos="fade-left"
-        data-aos-delay="400"
-        onClick={() => setStatus("not")}
-        className={`font-cormorant font-semibold text-[13px] md:text-[17px] w-[90px] md:w-[120px] h-[30px] md:h-[40px] rounded-full uppercase ${status === "not" ? "bg-[#F9732A] text-[#FEFBF0]" : "border-[#F9732A] border-[0.5px] text-[#FF751F] bg-transparent"}`}
-      >
-        NOT ATTEND
-      </button>
-    </div>
-    <p
-      data-aos="fade-in"
-      data-aos-delay="500"
-      className="mt-[43px] font-cormorant text-[13px] md:text-[18px] text-[#CD4964]"
-    >
-      ARE YOU SURE?
-    </p>
-    <button
-      data-aos="fade-up"
-      data-aos-delay="600"
-      className="mt-[43px] font-cormorant text-[13px] md:text-[17px] bg-[#F9732A] text-[#FEFBF0] font-semibold w-[200px] md:w-[260px] h-[30px] md:h-[42px] rounded-full"
-    >
-      CONFIRM NOT ATTEND
-    </button>
-    <p
-      data-aos="fade-up"
-      data-aos-delay="700"
-      className="mt-[43px] font-cormorant text-[13px] md:text-[18px] text-[#CD4964]"
-    >
-      Having trouble with RSVP?
-    </p>
-    <button
-      data-aos="fade-up"
-      data-aos-delay="800"
-      onClick={waHelpdesk}
-      className="mt-[22px] md:mt-[30px] mx-auto font-cormorant text-[13px] md:text-[17px] bg-[#F9732A] text-[#FEFBF0] font-semibold w-[200px] md:w-[260px] h-[30px] md:h-[42px] rounded-full flex items-center justify-center gap-1"
-    >
-      <Image
-        src="/images/rsvp/lonceng.svg"
-        alt="wa"
-        width={18}
-        height={23}
-        sizes="(max-width: 1023px) 20px, 0px"
-        className="w-[20px] md:w-[26px] object-contain"
-      />
-      CHAT HELPDESK TEAM
-    </button>
-  </div>
+        <div
+          className="relative z-20 bg-[#FEFFF9] mx-[25px] md:mx-[80px] mt-[48px] md:mt-[64px] text-center pb-[40%] md:pb-[20%]"
+          style={{ boxShadow: "0px 4px 5px 5px rgba(0,0,0,0.40)" }}
+        >
+          <h2
+            data-aos="fade-in"
+            className="font-david pt-[67px] md:pt-[80px] font-bold text-[24px] md:text-[36px] text-[#CD4964]"
+          >
+            RSVP
+          </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="100"
+            className="mt-[35px] md:mt-[45px] font-cormorant text-[13px] md:text-[18px] text-[#CD4964]"
+          >
+            Dear Mr./Mrs./Ms.
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="mt-[25px] font-cormorant text-[13px] md:text-[18px] font-bold text-[#CD4964]"
+          >
+            .............
+          </p>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="mt-[34px] font-cormorant text-[13px] md:text-[18px] text-[#CD4964]"
+          >
+            Kindly confirm your attendance before <br />
+            <span className="font-bold">02 May 2026</span>
+          </p>
+          <div className="flex justify-center gap-6 md:gap-4 mt-[31px] md:mt-[40px]">
+            <button
+              data-aos="fade-right"
+              data-aos-delay="400"
+              onClick={() => {
+                setStatus("attend");
+                setOpenPopup(true);
+              }}
+              className={`font-cormorant font-semibold text-[13px] md:text-[17px] w-[90px] md:w-[120px] h-[30px] md:h-[40px] rounded-full uppercase ${status === "attend" ? "bg-[#F9732A] text-[#FEFBF0]" : "border-[#F9732A] border-[0.5px] text-[#FF751F] bg-transparent"}`}
+            >
+              ATTEND
+            </button>
+            <button
+              data-aos="fade-left"
+              data-aos-delay="400"
+              onClick={() => setStatus("not")}
+              className={`font-cormorant font-semibold text-[13px] md:text-[17px] w-[90px] md:w-[120px] h-[30px] md:h-[40px] rounded-full uppercase ${status === "not" ? "bg-[#F9732A] text-[#FEFBF0]" : "border-[#F9732A] border-[0.5px] text-[#FF751F] bg-transparent"}`}
+            >
+              NOT ATTEND
+            </button>
+          </div>
+          <p
+            data-aos="fade-in"
+            data-aos-delay="500"
+            className="mt-[43px] font-cormorant text-[13px] md:text-[18px] text-[#CD4964]"
+          >
+            ARE YOU SURE?
+          </p>
+          <button
+            data-aos="fade-up"
+            data-aos-delay="600"
+            className="mt-[43px] font-cormorant text-[13px] md:text-[17px] bg-[#F9732A] text-[#FEFBF0] font-semibold w-[200px] md:w-[260px] h-[30px] md:h-[42px] rounded-full"
+          >
+            CONFIRM NOT ATTEND
+          </button>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="700"
+            className="mt-[43px] font-cormorant text-[13px] md:text-[18px] text-[#CD4964]"
+          >
+            Having trouble with RSVP?
+          </p>
+          <button
+            data-aos="fade-up"
+            data-aos-delay="800"
+            onClick={waHelpdesk}
+            className="mt-[22px] md:mt-[30px] mx-auto font-cormorant text-[13px] md:text-[17px] bg-[#F9732A] text-[#FEFBF0] font-semibold w-[200px] md:w-[260px] h-[30px] md:h-[42px] rounded-full flex items-center justify-center gap-1"
+          >
+            <Image
+              src="/images/rsvp/lonceng.svg"
+              alt="wa"
+              width={18}
+              height={23}
+              sizes="(max-width: 1023px) 20px, 0px"
+              className="w-[20px] md:w-[26px] object-contain"
+            />
+            CHAT HELPDESK TEAM
+          </button>
+        </div>
       </div>
 
       {/* ===== DESKTOP ===== */}
@@ -173,7 +173,7 @@ const Rsvp = () => {
           height={160}
           sizes="(min-width: 1024px) 36vw, 0px"
           className="absolute z-30 h-auto"
-          style={{ top: "1", right: "15vw", width: "36vw" }}
+          style={{ top: "1", right: "15vw", width: "36.5vw" }}
         />
 
         {/* Ornamen bunga kiri bawah */}
@@ -224,16 +224,26 @@ const Rsvp = () => {
             data-aos="fade-up"
             data-aos-delay="300"
             className="font-cormorant text-[#CD4964]"
-            style={{ marginTop: "2vw", fontSize: "1.32vw", lineHeight: "1.85vw" }}
+            style={{
+              marginTop: "2vw",
+              fontSize: "1.32vw",
+              lineHeight: "1.85vw",
+            }}
           >
             Kindly confirm your attendance before <br />
             <span className="font-bold">02 May 2026</span>
           </p>
-          <div className="flex justify-center" style={{ gap: "1.5vw", marginTop: "3.05vw" }}>
+          <div
+            className="flex justify-center"
+            style={{ gap: "1.5vw", marginTop: "3.05vw" }}
+          >
             <button
               data-aos="fade-right"
               data-aos-delay="400"
-              onClick={() => { setStatus("attend"); setOpenPopup(true); }}
+              onClick={() => {
+                setStatus("attend");
+                setOpenPopup(true);
+              }}
               className={`font-cormorant font-semibold rounded-full uppercase ${status === "attend" ? "bg-[#F9732A] text-[#FEFBF0]" : "border-[#F9732A] border-[0.5px] text-[#FF751F] bg-transparent"}`}
               style={{ fontSize: "1.32vw", width: "10.12vw", height: "2.65vw" }}
             >
@@ -261,7 +271,12 @@ const Rsvp = () => {
             data-aos="fade-up"
             data-aos-delay="600"
             className="font-cormorant bg-[#F9732A] text-[#FEFBF0] font-semibold rounded-full"
-            style={{ marginTop: "3.84vw", fontSize: "1.32vw", width: "21.83vw", height: "2.65vw" }}
+            style={{
+              marginTop: "3.84vw",
+              fontSize: "1.32vw",
+              width: "21.83vw",
+              height: "2.65vw",
+            }}
           >
             CONFIRM NOT ATTEND
           </button>
@@ -278,7 +293,13 @@ const Rsvp = () => {
             data-aos-delay="800"
             onClick={waHelpdesk}
             className="mx-auto font-cormorant bg-[#F9732A] text-[#FEFBF0] font-semibold rounded-full flex items-center justify-center"
-            style={{ marginTop: "2vw", fontSize: "1.32vw", width: "21.83vw", height: "2.65vw", gap: "0.4vw" }}
+            style={{
+              marginTop: "2vw",
+              fontSize: "1.32vw",
+              width: "21.83vw",
+              height: "2.65vw",
+              gap: "0.4vw",
+            }}
           >
             <Image
               src="/images/rsvp/lonceng.svg"

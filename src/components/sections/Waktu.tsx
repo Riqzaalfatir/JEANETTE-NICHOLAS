@@ -7,7 +7,7 @@ const Waktu = () => {
     <div id="waktu">
       {/* ===== MOBILE ===== */}
       <div className="relative w-full aspect-[390/641] mx-auto overflow-hidden flex items-center justify-center lg:hidden">
-        {/* BACKGROUND */}
+        {/* BG */}
         <Image
           src="/images/waktu/Bg-Waktu.png"
           alt="bg"
@@ -125,7 +125,7 @@ const Waktu = () => {
               paddingRight: "1.54vw",
             }}
           >
-            {/* DATE */}
+            {/* TANGGAL */}
             <div
               data-aos="fade-in"
               className="flex items-baseline text-center text-[#CD4964]"
@@ -159,7 +159,7 @@ const Waktu = () => {
               </span>
             </div>
 
-            {/* TIME */}
+            {/* JAM */}
             <div
               className="flex text-[#CD4964]"
               style={{ gap: "4vw", marginTop: "4%" }}
@@ -183,7 +183,7 @@ const Waktu = () => {
               />
             </div>
 
-            {/* TITLE */}
+            {/* JUDUL */}
             <p
               data-aos="fade-up"
               data-aos-delay="100"
@@ -193,7 +193,7 @@ const Waktu = () => {
               SANGJIT CEREMONY
             </p>
 
-            {/* LOCATION */}
+            {/* LOKASI */}
             <p
               data-aos="fade-up"
               data-aos-delay="300"
@@ -278,7 +278,7 @@ const Waktu = () => {
           boxShadow: "0px 4.44px 11.44px 0px rgba(0,0,0,0.73)",
         }}
       >
-        {/* BACKGROUND */}
+        {/* BG */}
         <Image
           src="/images/waktu/Bg-Waktu.webp"
           alt="bg"
@@ -402,7 +402,7 @@ const Waktu = () => {
               show: { transition: { staggerChildren: 0.25 } },
             }}
           >
-            {/* DATE */}
+            {/* TANGGAL */}
             <motion.div
               className="flex items-baseline text-center text-[#CD4964]"
               style={{ gap: "2.6vw" }}
@@ -445,7 +445,7 @@ const Waktu = () => {
               </span>
             </motion.div>
 
-            {/* TIME */}
+            {/* WAKTU */}
             <motion.div
               className="flex text-[#CD4964]"
               style={{ gap: "1.5vw", marginTop: "0.66vw" }}
@@ -479,7 +479,7 @@ const Waktu = () => {
               />
             </motion.div>
 
-            {/* TITLE */}
+            {/* JUDUL */}
             <motion.p
               className="font-bold text-[#CD4964] font-david"
               style={{ marginTop: "4.56vw", fontSize: "1.46vw" }}

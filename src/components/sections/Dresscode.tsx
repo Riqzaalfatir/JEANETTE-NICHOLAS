@@ -46,7 +46,7 @@ const Dresscode = () => {
           width={250}
           height={250}
           sizes="(max-width: 1023px) 80vw, 0px"
-          className="absolute bottom-[8%] -right-[27%] z-30 w-[78%] h-auto"
+          className="absolute bottom-[7.5%] -right-[26%] z-30 w-[78%] h-auto"
         />
 
         {/* ORNAMEN BUNGA TENGAH */}
@@ -56,7 +56,7 @@ const Dresscode = () => {
           width={250}
           height={250}
           sizes="(max-width: 1023px) 38vw, 0px"
-          className="absolute bottom-[5%] right-[21%] z-20 w-[38%] h-auto"
+          className="absolute bottom-[5%] right-[19.5%] z-20 w-[36%] h-auto"
         />
 
         {/* ORNAMEN GUCI */}
@@ -66,7 +66,7 @@ const Dresscode = () => {
           width={140}
           height={140}
           sizes="(max-width: 1023px) 36vw, 0px"
-          className="absolute bottom-[2%] left-1/2 -translate-x-1/2 z-0 w-[36%] h-auto"
+          className="absolute bottom-[1.1%] left-1/2 -translate-x-1/2 z-0 w-[36%] h-auto"
         />
 
         {/* CONTENT */}
@@ -132,7 +132,7 @@ const Dresscode = () => {
           height={200}
           sizes="(min-width: 1024px) 26vw, 0px"
           className="absolute z-10 h-auto"
-          style={{ bottom: "5.5vw", left: "24.7vw", width: "26.5vw" }}
+          style={{ bottom: "5.3vw", left: "24.7vw", width: "26.5vw" }}
         />
 
         {/* ORNAMEN BUNGA KANAN */}
@@ -165,7 +165,7 @@ const Dresscode = () => {
           height={140}
           sizes="(min-width: 1024px) 15vw, 0px"
           className="absolute left-1/2 -translate-x-1/2 z-0 h-auto"
-          style={{ bottom: "-0.5vw", width: "15vw" }}
+          style={{ bottom: "0.3vw", width: "14vw" }}
         />
 
         {/* CONTENT */}
@@ -184,7 +184,11 @@ const Dresscode = () => {
             data-aos="fade-in"
             data-aos-delay="100"
             className="text-[#CD4964] font-cormorant"
-            style={{ fontSize: "1.39vw", marginTop: "1.3vw", lineHeight: "2vw" }}
+            style={{
+              fontSize: "1.39vw",
+              marginTop: "1.3vw",
+              lineHeight: "2vw",
+            }}
           >
             We would sincerely appreciate
             <br />
